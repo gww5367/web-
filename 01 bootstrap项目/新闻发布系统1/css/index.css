@@ -1,0 +1,230 @@
+/* 初始化样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html {
+	min-width: 768px;
+	height: 100vh;
+	overflow-x: hidden;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6, p {
+    margin: 0;
+    padding: 0;
+}
+.bd-right {
+	border-right: 1px solid white;
+}
+.newblur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    
+    transform: scale(1.05);
+}
+/* 登录注册 */
+.denglu,
+.zhuce {
+	display: none;
+	width: 640px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: pink; */
+    background-color: rgba(27, 31, 34, 0.85);
+    padding: 40px;
+    z-index: 999;
+    border-radius: 5px;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    cursor: pointer;
+}
+.close i:hover{
+    transform: scale(1.2);
+}
+.login_title {
+	font-size: 22px;
+	font-weight: 600;
+	color: white;
+}
+.denglu .form,
+.zhuce .form {
+	width: 560px;
+	text-align: center;
+}
+.form .uname,
+.form .pwd {
+	width: 300px;
+	height: 40px;
+	outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: white;
+    padding-left: 15px;
+    font-size: 18px;
+}
+.form .send_login,
+.form .register,
+.form .send_reg,
+.form .back {
+	width: 300px;
+	height: 40px;
+	outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: white;
+    padding-left: 15px;
+    font-size: 18px;
+}
+/* header */
+.header {
+	height: 40px;
+	background-color: #222;
+	color: white;
+	line-height: 40px;
+}
+.header input {
+	background-color: transparent;
+	border: 0;  
+    outline: none; 
+	color: white;
+}
+.header .lorg {
+	float: right;
+	border-right: 1px solid white;
+	padding-right: 12px;
+}
+.header .htxt {
+	margin-left:-15px;
+}
+.til-img {
+	width: 150px;
+	height: 90px;
+	background-color: pink;
+	float: left
+}
+.til-img img {
+	width: 100%;
+	height: 100%;
+}
+.title {
+	margin-left: 165px;
+	margin-top: 25px
+}
+.title h3 {
+	margin: 0;
+	font-weight: 600;
+}
+.subtitle {
+	margin: 15px 0px 5px 165px;
+	color: #505050;
+}
+.click {
+	margin-left: 25px;
+}
+.tab-content .list-group-item a {
+	color: black
+}
+.list-group-item {
+	border: none;
+	border-bottom: 1px solid #eee;
+	margin-top: 2px;
+}
+.nav-tabs {
+	margin-top: 1px;
+}
+.tab-pane .list-group-item:nth-child(1) {
+	padding-top: 1px!important;
+}
+.nav-stacked > li {
+	width: 130px;
+}
+.nav-tabs > li > a {
+	border: none;
+	border-radius:0;
+	background-color: #222;
+	color: white;
+	padding: 18px 0px;
+	text-align: center;
+}
+.nav-tabs > li > a:hover {
+	background-color: black;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	border: none;
+	background-color: black;
+	color: white;
+}
+.pagination li a {
+	color: black
+}
+.list-group-item .fire {
+	float: right;
+	background-color: orange;
+	color: white;
+}
+.list-group-item .hot {
+	float: right;
+	background-color: #FF0000;
+	color: white;
+}
+.panel-heading {
+	color: #FF0000!important
+}
+.list-group li a {
+	color: #505050
+}
+.footer {
+	background-color: #222;
+	height: 80px;
+	width: 100%;
+}
+.footer p {
+	margin-top: 12px;
+	text-align: center;
+	color: white;
+}
+
+
+/*新闻详情*/
+.newsinfo {
+	background-color: #eee;
+	padding: 15px;
+}
+.newsinfo h1 {
+	text-align: center;
+	margin-top: 40px;
+	padding: 10px 0px;
+}
+.news img {
+	margin: 30px auto;
+	display: block;
+}
+

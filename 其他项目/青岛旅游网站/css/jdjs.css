@@ -1,0 +1,228 @@
+*{ margin:0; padding:0; list-style:none;}
+
+/*导航条*/
+a{
+	text-decoration: none;
+}
+.daohangtiao{
+  /* background-color:#FFFFFF;*/
+   background-color:#222222;
+   width: 99.63%;
+   margin: 0 auto;
+   
+}
+
+.daohangtiao-content{
+	display: table;
+	margin: 0 auto;
+}
+.daohangtiao .daohangtiao-bar .daohangtiao-content li{
+	list-style: none;
+	/*float: left;*/
+	
+}
+.daohangtiao ul li.daohangtiao-item #gww{font-family:charcoal;font-style: oblique;font-size:inherit; }
+
+.daohangtiao ul li.daohangtiao-item {padding: 0 20px 10px 20px;width: auto;height: 50px;line-height: 50px;float: left;position: relative;}
+
+//过度效果
+.daohangtiao ul li.daohangtiao-item a {color: #fff;transition: none ease-out 0.3s;transition-property: color, background, text-indent, opacity}
+				
+.daohangtiao ul li.daohangtiao-item a { color: #FFFFFF; padding: 10px 40px; display: block; }
+
+.daohangtiao ul li.daohangtiao-item { padding: 0px .5px 10px; }
+.daohangtiao ul li.daohangtiao-item { line-height: 20px; }
+
+/*.daohangtiao ul li.daohangtiao-item a.active, .daohangtiao ul li.daohangtiao-item:hover a { padding: 10px 40px; color: #474747; background: #99FFCC; opacity: 0.6;}*/
+
+.daohangtiao ul li.daohangtiao-item { padding: 13px 0.5px; height: auto; }
+.lanmu{
+	height: 1400px;
+	width: 1200px;
+	/* border: dotted; */
+	margin: 0 auto;
+	margin-top: 2px;	
+}
+.xinxilan{
+	
+	height: 1200px;
+	width: 850px;
+	border: solid;
+	border-width: 1px;
+	float: left;
+	border-color: #DCDCDC;
+	
+}
+.zuoyonglan{
+	height: 1200px;
+	width: 300px;
+	border:1px solid #a5b6c8;
+	border-bottom-right-radius:15px ;
+	border-bottom-left-radius:15px ;
+	border-top-right-radius:15px ;
+	border-top-left-radius:15px ;
+	border-color: #DCDCDC;
+	float: left;
+	
+}
+.name{
+	height: 25px;
+	width: 820px;
+	margin: 0 auto;
+	padding-top: 15px ;
+}
+.name p{
+	text-align: center;
+	font-family: "黑体";
+	font-size: 30px;
+	margin-top:5px ;
+}
+.quyu1{
+	height: 680px;
+	width: 820px;
+	border-width: 1px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border-color: #DCDCDC;
+	border-style: solid none; 
+	
+}
+.quyu2{
+	width: 830px;
+	height: 370px;
+/* 	border: solid;
+	border-width: 1px; */
+	margin: 0 auto;
+	margin-top: 20px;
+	/* border-color: #DCDCDC; */
+}
+
+img{ border:0;}
+
+.ban{ width:700px; height:600px; position:relative; overflow:hidden;margin:40px auto 0 auto;}
+.ban2{ width:700px; height:500px; position:relative; overflow:hidden;}
+.ban2 ul{ position:absolute; left:0; top:0;}
+.ban2 ul li{ width:700px; height:500px;}
+.prev{ float:left; cursor:pointer;}
+.num{ height:82px;overflow:hidden; width:640px; position:relative;float:left;}
+.min_pic{ padding-top:10px; width:700px;}
+.num ul{ position:absolute; left:0; top:0;}
+.num ul li{ width:80px; height:80px; margin-right:5px; padding:1px;}
+.num ul li.on{ border:1px solid red; padding:0;}
+.prev_btn1{ width:16px; text-align:center; height:18px; margin-top:40px; margin-right:20px; cursor:pointer; float:left;}
+.next_btn1{  width:16px; text-align:center; height:18px; margin-top:40px;cursor:pointer;float:right;}
+.prev1{ position:absolute; top:220px; left:20px; width:28px; height:51px;z-index:9;cursor:pointer;}
+.next1{ position:absolute; top:220px; right:20px; width:28px; height:51px;z-index:9;cursor:pointer;}
+.mhc{ background:#000; width:100%;opacity:0.5;-moz-opacity:0.5;filter:alpha(Opacity=50); position:absolute; left:0; top:0; display:none;}
+.pop_up{ width:900px; height:680px; padding:10px; background:#fff; position:fixed; -position:absolute; left:50%; top:50%; margin-left:-525px; margin-top:-330px; display:none; z-index:99;}
+.pop_up_xx{ width:40px; height:40px; position:absolute; top:-40px; right:0; cursor:pointer;}
+.pop_up2{ width:900px; height:680px; position:relative; overflow:hidden;}
+.pop_up2{ width:900px; height:680px; position:relative; overflow:hidden; float:left;}
+.pop_up2 ul{ position:absolute; left:0; top:0;}
+.pop_up2 ul li{ width:900px; height:680px; float:left;}
+
+.text{
+	
+	height:333px;
+	width: 815px;
+	/* border: dotted; */
+	background-image: url(../img/磨砂背景1.jpg);
+	
+}
+.text1,.text2,.text3{
+	border: solid;
+	border-width: 1px;
+	border-color: #DCDCDC;
+	height:330px;
+	width: 269px;
+	float: left;
+}
+.text1-1,.text1-2,.text1-3{
+	width: 249px;
+	height:280px;
+	margin: 0 auto;
+	overflow:hidden;
+	/* border: dotted; */
+}
+.text1-1 p,.text1-2 p,.text1-3 p{
+	font-family: "仿宋"; padding: 18px;margin-top: 3px;font-size:17px;
+}
+.dh{
+	width: 200px;
+	height: 1100px;
+	/* border: solid; */
+	border-width: 1px;
+	border-color: #DCDCDC;
+	margin: 0 auto;
+}
+.hr{
+	border-color: #DCDCDC;
+	height: 50px;
+}
+.hr p{
+	margin-top: 20px;
+	font-family: "黑体";
+	color: #000000;
+}
+.hr hr{
+	color: #F0F0F0;
+	width: 230px;
+}
+
+.dh1,.dh2,.dh3,.dh4,.dh5,.dh6,.dh7,.dh8{
+	width: 150px;
+	height: 135px;
+	border: solid;
+	border-width: 3px;
+	border-color: #DCDCDC;
+	margin: 0 auto;
+	border-style: none none solid none;
+	
+}
+.dh1 img,.dh2 img,.dh3 img,.dh4 img,.dh5 img,.dh6 img,.dh7 img,.dh8 img{
+	width: 150px;
+	height: 130px;
+}
+.dh1 p,.dh2 p,.dh3 p,.dh4 p,.dh5 p,.dh6 p,.dh7 p,.dh8 p{
+text-align: center;
+}
+
+.dh1,.dh2,.dh3,.dh4,.dh5,.dh6,.dh7,.dh8{
+	position: relative;
+	overflow: hidden;
+}
+.dh1:after,.dh2:after,.dh3:after,.dh4:after,.dh5:after,.dh6:after,.dh7:after,.dh8:after{
+            content: attr(data-title);
+            position: absolute;
+            width:100%;
+            top:100%;
+            left:0;
+            padding: 0.7em 0;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(52,47,41,.5);
+            -webkit-transition:all .3s ease-in-out;
+            transition:all .3s ease-in-out;
+            opacity: 0;
+        }
+.dh1:hover:after,.dh2:hover:after,.dh3:hover:after,.dh4:hover:after,.dh5:hover:after,.dh6:hover:after,.dh7:hover:after,.dh8:hover:after{
+            opacity: 1;
+            -webkit-transform:translate(0,-100%);
+            transform:translate(0,-100%);
+        }
+
+/*页脚*/
+#footer{
+	width: 700px;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;	
+	/* background-color:#6ABEEA; */
+}
+.banquan{
+	/* border: dotted; */
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+}
+

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="./lib/css/layui.css">
+  <link rel="stylesheet" href="./css/backstage.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">
+        <i class="layui-icon layui-icon-set-fill logo"></i>
+    </div>
+    
+    <ul class="nav layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="javascript:;">用户管理</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">新闻管理</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">栏目管理</a></li>
+      <li class="layui-nav-item"><a href="javascript:;">其它管理</a></li>
+    </ul>
+   
+    <ul class="layui-nav layui-layout-right">
+      <li class="uname">
+        <a href="javascript:;">
+          admin
+        </a>
+      </li>
+      <li class="out"><a href="javascript:;">[退出系统]</a></li>
+    </ul>
+  </div>
+  
+  <div class="left layui-side layui-bg-black ">
+  	<p>新</p>
+  	<p>闻</p>
+  	<p>后</p>
+  	<p>台</p>
+  	<p>管</p>
+  	<p>理</p>
+  	<p>系</p>
+  	<p>统</p>
+  </div>
+  
+  <div class="layui-body content">
+    <!-- 内容主体区域 -->
+          <div class="yhgl layui-container">
+              <table class="layui-table " lay-size="sm">
+                  <colgroup>
+                    <col width="50">
+                    <col width="150">
+                    <col width="150">
+                    <col width="100">
+                    <col width="100">
+                    <col width="50">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>账号</th>
+                      <th>账号类型</th>                      
+                      <th>密码</th>
+                      <th>创建时间</th>
+                      <th>删除</th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>admin</td>
+                      <td>超级管理员</td>
+                      <td>123456</td>
+                      <td>2012/12/22 12:11:23</td>
+                      <td>
+                      	<a href="javascript:;" class="del">
+                      	<i class="layui-icon layui-icon-delete"></i>
+                      	</a>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+               <!-- 分页 -->
+              <ul class="fy">
+                  <li><a href="javascript:;">上一页</a></li>
+                  <li><a href="javascript:;">下一页</a></li>
+              </ul>    
+          </div>
+          <div class="xwgl layui-container">
+          	  <button type="button" class="layui-btn add">
+                 <i class="layui-icon">&#xe608;</i>添加新闻
+              </button>
+              <table class="layui-table " lay-size="sm">
+                  <colgroup>
+                    <col width="50">
+                    <col width="120">
+                    <col width="120">
+                    <col >
+                    <col width="100">
+                    <col width="150">
+                    <col width="50">
+                    <col width="50">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>标题</th>
+                      <th>栏目</th>
+                      <th>内容</th>
+                      <th>发布人</th>
+                      <th>创建时间</th>
+                      <th>编辑</th>
+                      <th>删除</th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>测试标题1</td>
+                      <td>中国人民抗日战争胜利72周年</td>
+                      <td class="of">员超级管理员员超级管理员员超级管理员员超级管理员员超级管理员员超级管理员员超级管理员员超级管理员员超级管理员</td>
+                      <td>admin</td>
+                      <td>2012/12/22 12:11:23</td>
+                      <td>
+                      	<a href="javascript:;" class="edit">
+                        <i class="layui-icon layui-icon-edit"></i>
+                        </a>
+                      </td>
+                      <td>
+                      	<a href="javascript:;" class="del">
+                      	<i class="layui-icon layui-icon-delete"></i>
+                      	</a>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <!-- 分页 -->
+              <ul class="fy">
+                  <li><a href="javascript:;">上一页</a></li>
+                  <li><a href="javascript:;">下一页</a></li>
+              </ul>
+          </div>
+          <div class="lmgl layui-container">
+              <table class="layui-table " lay-size="sm">
+                  <colgroup>
+                    <col width="50">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                    <col width="100">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>栏目名称</th>
+                      <th>删除</th>
+                    </tr> 
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>热点</td>
+                      <td>
+                      	<a href="javascript:;" class="del">
+                      	<i class="layui-icon layui-icon-delete"></i>
+                      	</a>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+          </div>
+          <div class="qtgl layui-container">
+             该功能尚未开放，敬请期待！
+          </div>
+  </div>
+  
+  <div class="footer layui-footer">
+    <!-- 底部固定区域 -->
+    <p>版权所有©16网络工程B3班</p>
+  </div>
+</div>
+
+
+<!-- 编辑新闻 -->
+<div class="editnew">
+ <form class="layui-form" action="">
+  <div class="layui-form-item">
+    <label class="layui-form-label">标题</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" required  lay-verify="required"  autocomplete="off" class="layui-input bt">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">栏目</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" required  lay-verify="required"  autocomplete="off" class="layui-input lm">
+    </div>
+  </div>
+
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">内容</label>
+    <div class="layui-input-block">
+      <textarea name="desc" class="layui-textarea nr"></textarea>
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button type="submit" class="layui-btn">立即提交</button>
+      <button type="button" class="layui-btn layui-btn-primary cancle">取消</button>
+    </div>
+  </div>
+</form>
+</div>
+
+<!-- 添加新闻 -->
+<div class="addnews">  
+  <span class="clo">
+     <i class="layui-icon layui-icon-close"></i>
+  </span>
+
+  <form class="layui-form" action="">
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">新闻标题</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">新闻栏目</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" required  lay-verify="required" placeholder="请输入栏目" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <label class="layui-form-label">选择框</label>
+    <div class="layui-input-block">
+      <select name="city" lay-verify="required">
+        <option value=""></option>
+        <option value="0">最新新闻</option>
+        <option value="1">热点新闻</option>
+        <option value="2">国内新闻</option>
+        <option value="3">国外新闻</option>
+        <option value="4">新闻</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">内容</label>
+    <div class="layui-input-block">
+      <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+
+</form>
+</div>
+
+<!-- 删除 -->
+<div class="shanchu">
+   <p>删除成功</p>
+</div>
+
+<script src="./lib/js/jquery.min.js"></script>
+<script src="./lib/js/layui.js"></script>
+<script src="./js/backstage.js"></script>      
+</body>
+</html>

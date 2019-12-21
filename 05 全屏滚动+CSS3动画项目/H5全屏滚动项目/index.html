@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="js/jquery.min.js"></script>
+    <!-- jquery.easings.min.js 是必须的，用于 easing 参数，也可以使用完整的 jQuery UI 代替 -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+</head>
+<body>
+<div class="fix">
+    <img src="images/t1ldiffkjfxxxzhxzd-101-101.png" alt="">
+</div>
+<div class="next">
+    <img src="images/next.png" alt="">
+</div>
+<div id="fullpage">
+    <div class="section">
+        <img src="images/t1wsqsfgnaxxxmjxp6-470-50.png" class="s1_img1" height="50" width="470"/>
+        <img src="images/t1xccqfflgxxxild.png" class="s1_img2" height="147" width="134"/>
+        <img src="images/t1iakufbxxxxctz4tl-824-274.png" class="s1_img3" height="274" width="824"/>
+    </div>
+    <div class="section">
+        <div class="section2_title">
+            <img src="images/words-01-361-25.png" class="title_img1 move" alt="">
+            <img src="images/words-02.png" class="title_img2 move" alt="">
+        </div>
+        <div class="section2_box">
+            <div class="section2_img move">
+                <img src="images/search-words.png" class="section2_img1 move" alt="">
+            </div>
+            <img src="images/search-02-1.png" class="section2_img2 move" alt="">
+            <img src="images/goods-441-218.png" class="section2_img3" alt="">
+            <div class="coverLayer move"></div>
+            <img src="images/shirt-02-207-166.png" class="sofa move" alt="">
+        </div>
+    </div>
+    <div class="section">
+         <div class="section3_box">
+             <div class="tilt_sofa move"></div>
+             <div class="section3_content">
+                 <img src="images/img-01.gif" alt="" class="section3_img1">
+                 <img src="images/btn-01.gif" alt="" class="section3_img2 ">
+                 <img src="images/btn-01-a.gif" alt="" class="section3_img3 move">
+             </div>
+         </div>
+    </div>
+    <div class="section">
+        <img src="images/cloud.png" alt="" class="section4_cloud">
+        <div class="section4_title">
+            <img src="images/words-04.png" alt="">
+            <img src="images/words-04-a.png" class="words-04-a" alt="">
+        </div>
+        <div class="car move">
+            <img src="images/t1f.png" alt="" class="car_t1f">
+            <img src="images/car.png" alt="">
+        </div>
+        <div class="car_message move">
+            <img src="images/t1sqosfx8bxxa9wx_i-173-47.png" alt="" class="message move">
+            <img src="images/t1.png" alt="">
+        </div>
+    </div>
+    <div class="section">
+        <img src="images/words-05.png" alt="" class="section5_img1">
+        <img src="images/card-05.png" alt="" class="section5_img2 move">
+        <img src="images/order-05.png" alt="" class="section5_img3 move">
+        <img src="images/t1f.png" alt="" class="section5_img4 move">
+        <div class="overFlow">
+            <img src="images/mouse-05.png" alt="" class="section5_img5">
+            <img src="images/mouse-05-a.png" alt="" class="section5_img5 mouse-05-a move">
+            <img src="images/hand-05.png" alt="" class="section5_img6 move">
+        </div>
+    </div>
+    <div class="section">
+        <img src="images/box.png" alt="" class="section6_img1 move">
+        <img src="images/cloud-06.png" alt="" class="section6_img2">
+        <img src="images/car-06.png" alt="" class="section6_img3 ">
+        <img src="images/88.png" alt="" class="section6_img4 move">
+        <img src="images/words-06-a.png" alt="" class="section6_img5 move">
+        <img src="images/man.png" alt="" class="section6_img6 move">
+        <img src="images/women.png" alt="" class="section6_img7 move">
+        <img src="images/t1kzyqffnexxbcrepj-139-173.png" alt="" class="section6_img8 move">
+    </div>
+    <div class="section">
+         <div class="star move"></div>
+        <img src="images/good-07.png" alt="" class="section7_img1 move">
+    </div>
+    <div class="section">
+        <a href="#" class="startShopp">
+            <img src="images/btn-08.png" alt="">
+            <img src="images/btn-08-a.gif" alt="" class="btn-08-a">
+        </a>
+        <img src="images/again.png" alt="" class="again">
+        <img src="images/hand-08.png" alt="" class="hand">
+    </div>
+</div>
+<script>
+    $(function () {
+        var wHeight = $(window).height();
+        $('.next').bind('click',function () {
+            $.fn.fullpage.moveSectionDown();
+        })
+        $('#fullpage').fullpage({
+            navigation:true,
+            loopBottom  :true,
+            scrollingSpeed:1000,
+            afterLoad:function (anchorLink ,index) {
+                if(index == 2) {
+                    $('.next').fadeOut();
+                    $('.section2_img').show().animate({'right':'455px'},1000,function () {
+                        $(this).animate({'right':'395px'},800,function () {
+                            $('.section2_img1').animate({'opacity':1},700,function () {
+                                $('.section2_img').hide();
+                                $('.section2_img2').show().animate({'height':'30px','top':'20px','right':'240px'},600);
+                                $('.section2_img3').show().animate({'width':'527px','height':'200px'},600);
+                                $('.title_img2').animate({'opacity':1},600,function () {
+                                    $('.next').fadeIn();
+                                });
+                            });
+                        })
+                    });
+                }
+            },
+            onLeave:function (index,nextIndex) {
+                    if (index == 2 && nextIndex == 3) {
+                        $('.next').fadeOut();
+                         $('.coverLayer').show();
+                         var len = -(wHeight - 250);
+                         $('.sofa').show().animate({'width':'207px','height':'166px','bottom':''+len+'','left':'260px'},2000,function () {
+                             $('.section3_img1').attr('src','images/img-01-a.gif');
+                              $('.section3_img3').fadeIn(800);
+                             $('.next').fadeIn();
+                         });
+
+                    }
+
+                   if (index == 3 && nextIndex == 4) {
+                       $('.next').fadeOut();
+                        $('.sofa').hide();
+                        $('.tilt_sofa').show().animate({'bottom':-((wHeight-245)-25),'left':280},2000,function () {
+                            $(this).hide();
+                            $('.car_t1f').show();
+                            $('.car').animate({'left':'150%'},3500,'easeInElastic',function () {
+                                $('.car_message').show();
+                                $('.message ,.words-04-a').animate({'opacity':1},1500);
+                                $('.next').fadeIn();
+                            });
+                        });
+                   }
+                   if (index == 4 && nextIndex == 5 ) {
+                       $('.next').fadeOut();
+                        $('.section5_img6').animate({'bottom':0},2000,function () {
+                            $('.mouse-05-a').animate({'opacity':1});
+                            $('.section5_img4').show().animate({'bottom':100},1000,function () {
+                                $('.section5_img3').animate({'opacity':1,'bottom':385},1000,function () {
+                                    $('.section5_img1').css('transform','rotateY(360deg)').animate({'opacity':1,'top':0},function () {
+                                        $('.next').fadeIn();
+                                    });
+                                })
+                            })
+                        })
+                   }
+
+                if (index == 5 && nextIndex == 6 ){
+                    $('.next').fadeOut();
+                    $('.section5_img4').animate({'bottom':-(wHeight-500),'width':100,'left':'40%'},1500,function () {
+                        $(this).hide();
+                    });
+                    $('.section6_img1').animate({'left':'38%'},1500,function () {
+                        $('.section6_img1').animate({'bottom':30},600,function () {
+                            $('#fullpage .section:nth-child(6)').addClass('run_section6');
+                            $('.section6_img4').animate({'opacity':1},function () {
+                                $('.section6_img5').animate({'opacity':1,'left':'40%'},2500,'easeOutElastic',function () {
+                                    $('.section6_img6').animate({'opacity':1,'left':'55%'},800,function () {
+                                        $('.section6_img7').animate({'opacity':1},400,function () {
+                                            $('.section6_img8').animate({'opacity':1},600,function () {
+                                                $('.next').fadeIn();
+                                            });
+                                        })
+                                    });
+                                })
+                            });
+                        })
+                    })
+                }
+
+                if (index == 6 && nextIndex == 7 ){
+                    $('.next').fadeOut();
+                     setTimeout(function () {
+                         $('.star').animate({'width':300},600,function () {
+                             $('.section7_img1').show();
+                             $('.next').fadeIn();
+                         });
+                     },1500);
+                }
+
+                $('.startShopp').hover(function () {
+                    $('.btn-08-a').toggle();
+                });
+                $(document).mousemove(function (event) {
+                    var y = event.pageY + 10;
+                    var x = event.pageX - 65;
+                    var h = wHeight - $('.hand').height();
+                    if (y < h) {
+                        $('.hand').css({'left':x,'top':h});
+                    }else {
+                        $('.hand').css({'left':x,'top':y});
+                    }
+                });
+                $('.again').bind('click',function () {
+                     $.fn.fullpage.moveTo(1);
+                     $('img , .move').attr('style','');
+                    $('#fullpage .section:nth-child(6)').removeClass('run_section6');
+                });
+
+            }
+        });
+    })
+</script>
+</body>
+</html>

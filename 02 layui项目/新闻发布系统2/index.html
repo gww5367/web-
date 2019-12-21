@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	  <link rel="stylesheet" href="./lib/css/layui.css">
+      <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<!-- 登录 -->
+<div class="dlzc layui-bg-black">
+ <form class="layui-form" action="">
+  <div class="layui-form-item">
+    <label class="layui-form-label">账号:</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" required  lay-verify="required" placeholder="账号" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">密码:</label>
+    <div class="layui-input-block">
+      <input type="password" name="password" required lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button type="button" class="layui-btn">登录</button>
+      <button type="button" class="layui-btn zhuce">注册</button>
+    </div>
+  </div>
+</form>
+<i class="layui-icon layui-icon-close close"></i>  
+</div>
+
+<!-- 注册 -->
+<div class="zc layui-bg-black">
+ <form class="layui-form" action="">
+  <div class="layui-form-item">
+    <label class="layui-form-label">账号:</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" required  lay-verify="required" placeholder="账号" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">密码:</label>
+    <div class="layui-input-block">
+      <input type="password" name="password" required lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input">
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button type="button" class="layui-btn">提交</button>
+      <button type="button" class="layui-btn black">返回</button>
+    </div>
+  </div>
+</form>
+<i class="layui-icon layui-icon-close close"></i>  
+</div>
+
+<!-- 回到顶部 -->
+<div class="top">
+<i class="layui-icon layui-icon-top"></i>
+</div>
+
+<!-- 头部 -->
+    <div class="header layui-fluid">
+    	<div class="layui-row">
+    		<div class="layui-col-xs9">
+               <p>基于Web的新闻发布系统</p>
+            </div>
+            <a href="javascript:;" class="login">登录注册</a>
+            <a href="backstage.html">进入后台</a>
+    	</div>
+    </div>
+
+<!-- 导航 -->
+    <div class="nav layui-fluid">
+        <div class="layui-row">
+    		<div class="layui-col-xs8 layui-col-xs-offset2">
+                <ul>
+                	<li class="layui-col-xs2"><a href="javascript:;">最新新闻</a></li>
+                	<li class="layui-col-xs2"><a href="#cj">财经</a></li>
+                	<li class="layui-col-xs2"><a href="#kj">科技</a></li>
+                	<li class="layui-col-xs2"><a href="#yl">娱乐</a></li>
+                	<li class="layui-col-xs2"><a href="#qc">汽车</a></li>
+                	<li class="layui-col-xs2"><a href="#ty">体育</a></li>
+                </ul>
+            </div>
+    	</div>
+    </div>
+
+<!-- 内容 -->
+    <div class="content layui-container">
+<!-- 公告 -->
+        <div class="layui-row">
+            <div class="gg-mes layui-col-xs4">
+              <ul class="runimg">
+              	<li>
+                  <img src="./images/img1.webp" alt="你的浏览器不支持webp格式图片，请更换浏览器">
+              	</li>
+              	<li>
+                  <img src="./images/img2.webp" alt="你的浏览器不支持webp格式图片，请更换浏览器">
+              	</li>
+              	<li>
+                  <img src="./images/img3.webp" alt="你的浏览器不支持webp格式图片，请更换浏览器">
+              	</li>
+              </ul>
+            </div>
+
+            <div class="gg layui-col-xs7 layui-col-md-offset1 ">
+                <div class="gg-title">
+                	<h3>
+                		网站公告
+                	</h3>
+                </div>
+                <div class="gg-content">
+                    <p>
+                        本网站提供的数据均为填充数据，仅用于测试！
+                    </p>
+                    <p>
+                        本网站提供的数据均为填充数据，仅用于测试！
+                    </p>
+                    <p>
+                        本网站提供的数据均为填充数据，仅用于测试！
+                    </p>
+                    <p>
+                        本网站提供的数据均为填充数据，仅用于测试！
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<!-- 最新新闻 -->
+        <div class="layui-row">
+ 
+        	<div class="zxxw layui-col-xs8">
+        		<div class="zxxw-title layui-row">
+                    <div class="layui-col-xs4">
+                        <p>最新新闻</p>
+        	        </div>
+        	    </div>
+
+                <ul class="zxxw-content layui-timeline">
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题1
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题2
+                          </a>
+                      </h3>
+                      <p>
+                      中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题3
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题4
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                </ul> 
+               <!-- 分页 -->
+                <div class="fy">
+                    <ul>
+                      	<li>
+                      		<a href="javascript:;">
+                                <i class="layui-icon layui-icon-prev"></i>
+                      	    </a>
+                        </li>
+                      	<li>
+                      		<a href="javascript:;">
+                                1
+                      		</a>
+                      	</li>
+                      	<li>
+                      		<a href="javascript:;">
+                      			2
+                      		</a>
+                      	</li>
+                      	<li>
+                      		<a href="javascript:;">
+                      			3
+                      		</a>
+                      	</li>
+                      	<li>
+                      		<a href="javascript:;">
+                      			4
+                      		</a>
+                      	</li>
+                      	<li>
+                      		<a href="javascript:;">
+                      			5
+                      		</a>
+                      	</li>
+                      	<li>
+                      		<a href="javascript:;">
+                      			<i class="layui-icon layui-icon-next"></i>
+                      		</a>
+                      	</li>
+                      </ul>  
+                </div>     
+        	</div>
+            <!-- 热搜榜 -->
+        	<div class="zxxw-mes layui-col-xs4">
+                 <div class="zxxw-mes-title">
+                	<h3>
+                		热搜榜
+                	</h3>
+                </div>   
+                <div class="zxxw-mes-content">
+                    <ul>
+                    	<li class="firstli">
+                    		<a href="javascript:;">
+                    	       <span style="color: #FF5722">1.</span>
+                    	       湖人总冠军
+                    	    </a>
+                    	    <span class="no1">TOP1</span>
+                        </li>
+                    	<li>
+                    		<a href="javascript:;">
+                               <span style="color: #FFB800">2.</span>五大囧预定！威少一个精准传球直接打翻观众的啤酒
+                           </a>
+                    	</li>
+                    	<li>
+                    		<a href="javascript:;">
+                    	       <span style="color: #FFB800">3.</span>炮今天太猛了！怎么吹？
+                    	   </a>
+                        </li>
+                    	<li>
+                    		<a href="javascript:;">
+                    	       4.忽然发现没有杜兰特的勇士只赢了残阵骑士得了一个夺冠
+                    	   </a>
+                    	</li>
+                    	<li>
+                    		<a href="javascript:;">
+                    	       5.卧虎胜率联盟第一了！！！
+                    	   </a>
+                    	</li>
+                    	<li>
+                    		<a href="javascript:;">
+                           6.布朗：上赛季的失败不是欧文的错，是管理层和教练的错
+                           </a>
+                    	</li>
+                    	<li>
+                    		<a href="javascript:;">
+                           7.人走茶凉？勇士官方发布近十年经典镜头视频无凯文-杜兰特
+                           </a>
+                    	</li>
+                    </ul>
+                </div> 
+        	</div>
+        </div>
+
+
+<!-- 财金新闻 -->
+        <div class="layui-row" id="cj">
+ 
+        	<div class="zxxw layui-col-xs8">
+        		<div class="zxxw-title layui-row">
+                    <div class="layui-col-xs4">
+                        <p>财金新闻</p>
+        	        </div>
+        	        <div class="layui-col-xs1 layui-col-xs-offset5">
+                        <span class="more">MORE</span>
+        	        </div>
+        	    </div>
+
+                <ul class="zxxw-content layui-timeline">
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题1
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题2
+                          </a>
+                      </h3>
+                      <p>
+                      中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题3
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题4
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                </ul> 
+        	</div>
+
+        	<div class="cjimg zxxw-mes layui-col-xs4">
+               <img src="./images/img4.jpg" alt="请更换浏览器">
+               <a href="javascript:;">
+               	<p>金参考|不只遭遇弹劾调查，特朗普还面临一场“反攻”</p>
+               </a>
+               <ul>
+               	<li>效仿美国？日本这一动向值得警惕</li>
+               </ul>
+        	</div>
+        </div>
+
+        <div class="layui-row" id="kj">
+ 
+<!-- 科技新闻 -->
+        	<div class="kexw zxxw layui-col-xs6">
+        		<div class="zxxw-title layui-row">
+                    <div class="layui-col-xs4">
+                        <p>科技新闻</p>
+        	        </div>
+        	        <div class="layui-col-xs1 layui-col-xs-offset5">
+                        <span class="more">MORE</span>
+        	        </div>
+        	    </div>
+
+                <ul class="kjxw-content zxxw-content layui-timeline">
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题1
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题2
+                          </a>
+                      </h3>
+                      <p>
+                      中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题3
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题4
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                </ul> 
+        	</div>
+
+<!-- 娱乐新闻 -->
+        	<div class="kexw zxxw layui-col-xs6" id="yl">
+        		<div class="zxxw-title layui-row">
+                    <div class="layui-col-xs4">
+                        <p>娱乐新闻</p>
+        	        </div>
+        	        <div class="layui-col-xs1 layui-col-xs-offset5">
+                        <span class="more">MORE</span>
+        	        </div>
+        	    </div>
+
+                <ul class="kjxw-content zxxw-content layui-timeline">
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题1
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题2
+                          </a>
+                      </h3>
+                      <p>
+                      中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题3
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题4
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                </ul> 
+        	</div>
+
+        </div>
+
+
+        <div class="layui-row">
+ 
+<!-- 汽车新闻 -->
+        	<div class="kexw zxxw layui-col-xs6" id="qc">
+        		<div class="zxxw-title layui-row">
+                    <div class="layui-col-xs4">
+                        <p>汽车新闻</p>
+        	        </div>
+        	        <div class="layui-col-xs1 layui-col-xs-offset5">
+                        <span class="more">MORE</span>
+        	        </div>
+        	    </div>
+
+                <ul class="kjxw-content zxxw-content layui-timeline">
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题1
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题2
+                          </a>
+                      </h3>
+                      <p>
+                      中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题3
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题4
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                </ul> 
+        	</div>
+
+<!-- 体育新闻 -->
+        	<div class="kexw zxxw layui-col-xs6" id="ty">
+        		<div class="zxxw-title layui-row">
+                    <div class="layui-col-xs4">
+                        <p>体育新闻</p>
+        	        </div>
+        	        <div class="layui-col-xs1 layui-col-xs-offset5">
+                        <span class="more">MORE</span>
+        	        </div>
+        	    </div>
+
+                <ul class="kjxw-content zxxw-content layui-timeline">
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题1
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题2
+                          </a>
+                      </h3>
+                      <p>
+                      中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题3
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                  <li class="layui-timeline-item">
+                    <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                    <div class="layui-timeline-content layui-text">
+                      <h3 class="layui-timeline-title">
+                          <a href="newsdetails.html">
+                              测试标题4
+                          </a>
+                      </h3>
+                      <p>
+                        中国人民抗日战争胜利72周年
+                      </p>
+                    </div>
+                  </li>
+                </ul> 
+        	</div>
+
+        </div>
+
+
+    </div>
+
+<!-- 页脚 -->
+    <div class="fotter layui-fluid layui-bg-cyan">
+    	<div class="layui-row">
+    		<div class="layui-col-xs12">
+               <p>广州工商学院</p>
+               <p>Copyright © 2018-2020 16网络工程B3班. All Rights Reserved.</p>
+            </div>
+    	</div>
+    </div>
+
+<script src="./lib/js/jquery.min.js"></script>
+<script src="./js/index.js"></script>      
+</body>
+</html>

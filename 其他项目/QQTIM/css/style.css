@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+    color: #979797;
+    text-align: right;
+    font-size: 12px;
+}
+.nav {
+    position: relative;
+    left: 50%;
+    width: 1220px;
+    height: 80px;
+    transform: translate(-50%);
+}
+.logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nav-item {
+    position: absolute;
+    left: 130px;
+}
+.nav-item a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    text-shadow: -3px 2px 8px #333333;
+    color: #333333;
+    height: 80px;
+    width: 100px;
+    line-height: 80px;
+    text-align: center;
+}
+.nav-item a:hover {
+    background-color: #12B7F5;
+}
+.current {
+    background-color: #12B7F5;
+}
+.registered {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 230px;
+    background: url("../images/icons.png") 0 -244px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+.login {
+    position: absolute;
+    right: 0;
+    height: 62px;
+    width: 200px;
+    padding-top: 18px;
+}
+.login a {
+    text-decoration: none;
+    text-shadow: -3px 2px 8px #333333;
+    color: #333333;
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.page1 {
+    background: url("../images/tim_bg_1.jpg");
+    position: relative;
+    overflow: hidden;
+}
+.page1_cont {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -50px;
+}
+.page1_logo,
+.page1_btn,
+.page1_icon,
+.page1_doc {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.page1_btn {
+    top: 200px;
+    cursor: pointer;
+}
+.page1_icon {
+    bottom: 20px;
+}
+.page1_doc {
+    width: 1480px;
+    top: 490px;
+}
+.page2 {
+    position: relative;
+    background: url("../images/fisrtbg.jpg") -150px -100px fixed;
+}
+.page2_til {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    background:url("../images/brand.png") center #FFFFFF;
+    overflow: hidden;
+}
+.page3 {
+    position: relative;
+    background: url("../images/avd.jpg") -200px 0px fixed;
+}
+.page3_cont {
+    width: 100%;
+    height: 550px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0px;
+}
+.pic1 {
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -200px;
+}
+.page3_mes {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    bottom:50px;
+    left: 50%;
+    text-align: right;
+}
+.page3_mes h2 {
+    font-family: "微软雅黑";
+    font-size: 48px;
+    font-weight: 300;
+}
+.p1 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #666666;
+    text-shadow: -3px 2px 8px #666666;
+}
+.p2 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-shadow: -3px 2px 8px #666666;
+    color: #71D4F9;
+    cursor: pointer;
+}
+.page3_box {
+    width: 350px;
+    height: 90px;
+    margin-top: 20px;
+    float: right;
+}
+.page3_box1,
+.page3_box2,
+.page3_box3 {
+    position: relative;
+    box-sizing: border-box;
+    float: right;
+    height: 90px;
+    border-right: 1px solid rgb(216,216,216);
+}
+.page3_box1 {
+    width: 140px;
+    background: url("../images/qcall_figs.png") 50px 10px no-repeat;
+}
+.page3_box2 {
+    width: 105px;
+    background: url("../images/qcall_figs.png") -110px 10px no-repeat;
+}
+.page3_box3 {
+    width: 105px;
+    background: url("../images/qcall_figs.png") -215px 10px no-repeat;
+    border: none;
+}
+.page3_box1 p,
+.page3_box2 p,
+.page3_box3 p {
+    font-size: 16px;
+    color: #666666;
+    text-shadow: -3px 2px 8px #666666;
+    position: absolute;
+    bottom: 5px;
+    margin-left: 22px;
+}
+.page4 {
+    position: relative;
+    background: url("../images/blog.jpg") -200px 20px fixed;
+    overflow: hidden;
+}
+.page4_cont {
+    width: 100%;
+    height: 550px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0px;
+}
+.pic2 {
+    position: absolute;
+    bottom:80px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: 300px;
+}
+.page4_mes {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    bottom:50px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -200px;
+    text-align: left;
+}
+.page4_mes h2 {
+    font-family: "微软雅黑";
+    font-size: 48px;
+    font-weight: 300;
+}
+.page4_box {
+    width: 315px;
+    height: 90px;
+    margin-top: 20px;
+    float: left;
+}
+.page4_box1,
+.page4_box2,
+.page4_box3 {
+    position: relative;
+    box-sizing: border-box;
+    float: right;
+    height: 90px;
+    width: 105px;
+    border-right: 1px solid rgb(216,216,216);
+}
+.page4_box1 {
+    background: url("../images/qfile_figs.png") 20px 10px no-repeat;
+}
+.page4_box2 {
+    background: url("../images/qfile_figs.png") -95px 10px no-repeat;
+}
+.page4_box3 {
+    background: url("../images/qfile_figs.png") -215px 10px no-repeat;
+    border: none;
+}
+.page4_box1 p,
+.page4_box2 p,
+.page4_box3 p {
+    font-size: 16px;
+    color: #666666;
+    text-shadow: -3px 2px 8px #666666;
+    position: absolute;
+    bottom: 5px;
+    margin-left: 22px;
+}
+.page5 {
+    position: relative;
+}
+.page5_cont {
+    width: 100%;
+    height: 550px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0px;
+}
+.pic3 {
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -250px;
+}
+.page5_mes {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    bottom:50px;
+    left: 50%;
+    text-align: right;
+}
+.page5_mes h2 {
+    font-family: "微软雅黑";
+    font-size: 48px;
+    font-weight: 300;
+}
+.p1 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #666666;
+    text-shadow: -3px 2px 8px #666666;
+}
+.p2 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-shadow: -3px 2px 8px #666666;
+    color: #71D4F9;
+    cursor: pointer;
+}
+.page5_box {
+    width: 350px;
+    height: 90px;
+    margin-top: 20px;
+    float: right;
+}
+.page5_box1,
+.page5_box2,
+.page5_box3 {
+    position: relative;
+    box-sizing: border-box;
+    float: right;
+    height: 90px;
+    border-right: 1px solid rgb(216,216,216);
+}
+.page5_box1 {
+    width: 140px;
+    background: url("../images/qcall_figs.png") 50px 10px no-repeat;
+}
+.page5_box2 {
+    width: 105px;
+    background: url("../images/qcall_figs.png") -110px 10px no-repeat;
+}
+.page5_box3 {
+    width: 105px;
+    background: url("../images/qcall_figs.png") -215px 10px no-repeat;
+    border: none;
+}
+.page5_box1 p,
+.page5_box2 p,
+.page5_box3 p {
+    font-size: 16px;
+    color: #666666;
+    text-shadow: -3px 2px 8px #666666;
+    position: absolute;
+    bottom: 5px;
+    margin-left: 22px;
+}
+.footer {
+    position: absolute;
+    top: 550px;
+    width: 100%;
+    height: 360px;
+    background-color: #2A2A2A;
+}
+.footer_box {
+    box-sizing: border-box;
+    width: 1000px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 30px;
+    border-bottom: 1px solid #666666;
+}
+.box_lt ,
+.box_lt {
+    float: left;
+    width: 500px;
+    height: 250px;
+}
+.product {
+    margin-bottom: 30px;
+    color: #808080;
+}
+.version div {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+}
+.phone {
+    background: url("../images/plats1.png") 5px -3px no-repeat;
+}
+.pc {
+    background: url("../images/plats1.png") -115px -3px no-repeat;
+}
+.mac {
+    background: url("../images/plats1.png") -215px -3px no-repeat;
+}
+.pad {
+    background: url("../images/plats1.png") -330px -3px no-repeat;
+}
+.version div p {
+    margin-top: 60px;
+    color: #979797;
+}
+.box_gt div {
+    float: left;
+    width: 140px;
+}
+.box_gt h4 {
+    text-align: right;
+    color: #808080;
+    margin-bottom: 5px;
+}
+.cop1,
+.cop2{
+    color: #808080;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 12px;
+}
+.cop2{
+    margin-top: 20px;
+}

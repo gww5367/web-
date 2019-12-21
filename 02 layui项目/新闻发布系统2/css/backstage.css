@@ -1,0 +1,138 @@
+.left {
+	background-color: #404040!important;
+}
+.left p {
+   text-align: center;
+   font-size: 28px;
+   line-height: 70px;
+   font-style: italic;
+}
+.footer p {
+   text-align: center;
+}
+.logo {
+	color: white;
+	font-size: 22px;
+}
+.uname a,
+.out a {
+	color: white;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+}
+.uname {
+	position: absolute;
+	right: 120px;
+	top: 20px;
+}
+.out {
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	width: 80px;
+}
+.content {
+	padding: 15px;
+}
+.yhgl {
+
+}
+.xwgl,
+.lmgl,
+.qtgl {
+	display: none;
+}
+.layui-table {
+	 table-layout:fixed;
+}
+.layui-table td {
+    width:100%;  
+    word-break:keep-all;/* 不换行 */     
+    white-space:nowrap;/* 不换行 */  
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */  
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用*/  
+}
+.shanchu {
+	width: 300px;
+	height: 70px;
+	background-color: #787878;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 12px;
+	display: none;
+}
+.shanchu p {
+	text-align: center;
+	line-height: 70px;
+	font-size: 22px;
+	color: white;
+}
+.shanchu input {
+	width: 100px;
+	height: 40px;
+	margin-top: 10px;
+}
+.addnews {
+	width: 600px;
+	height: 500px;
+	background-color: #787878;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 12px;
+	z-index: 999;
+	padding: 15px;
+	display: none;
+}
+.addnews label {
+	color: white;
+}
+.addnews .clo {
+    position: absolute;
+	text-align: center;
+	top: 10px;
+	right: 10px;
+	color: white;
+	cursor: pointer;
+}
+.addnews .clo  i {
+	font-size: 28px;
+}
+.addnews .layui-form-label {
+	text-align: left;
+}
+.addnews .layui-form {
+	margin-top: 50px;
+	padding-right: 25px;
+}
+.editnew {
+	width: 400px;
+	height: 300px;
+	background-color: #eee;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+	display: none;
+}
+.editnew .layui-form-label {
+    text-align: center;
+}
+.editnew  {
+	padding:15px 25px 0 0;
+}
+.fy {
+   width: 120px;
+   margin: 10px auto;
+}
+.fy li {
+	float: left;
+	margin-right: 10px
+}

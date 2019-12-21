@@ -1,0 +1,206 @@
+.jd_layout {
+    width: 100%;
+    min-width: 320px;
+    max-width:640px;
+    background-color: #ccc;
+    margin: 0 auto;
+    position: relative;
+}
+.jd_login {
+    max-width:640px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background-color: rgba(233,35,34,0);
+    z-index: 999;
+}
+#logo {
+    width: 56px;
+    height: 30px;
+    background: url("../img/jd-sprites.png") 0px -105px;
+    background-size: 200px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+#login {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 40px;
+}
+#form {
+    width: 100%;
+    height: 100%;
+    padding-left:70px;
+    padding-right: 50px;
+}
+#txt {
+    width: 100%;
+    height:30px;
+    border-radius: 40px;
+    margin-top: 5px;
+    padding-left: 35px;
+}
+#form::before {
+    content: '';
+    width: 26px;
+    height: 23px;
+    position: absolute;
+    left: 80px;
+    top: 8px;
+    background: url("../img/jd-sprites.png") -58px -107px;
+    background-size: 200px;
+}
+.carousel_box {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+.jd_crl {
+    position: relative;
+    width: 800%;
+    overflow: hidden;
+}
+.jd_crl>li {
+    width: 12.5%;
+    float: left;
+    position: relative;
+}
+.jd_crl>li img {
+    width: 100%;
+    display: block;
+}
+.jd_pt {
+    width: 112px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 5px;
+}
+.jd_pt >li {
+    width: 6px;
+    height: 6px;
+    border-radius:3px;
+    float: left;
+    border:1px  solid #fff;
+    margin-left: 8px;
+    z-index: 2;
+}
+.current {
+    background-color: #fff;
+}
+.nav {
+    width: 100%;
+    background-color: #fff;
+    padding:10px 0;
+}
+.nav>li {
+    width: 25%;
+    float: left;
+    margin-top: 5px;
+    text-align: center;
+}
+.nav>li p {
+    line-height: 20px;
+}
+.nav>li img {
+    width: 50px;
+}
+.jd_prod {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+.jd_til {
+    width: 100%;
+    height: 20px;
+    color: #666;
+    padding-left: 20px;
+    border-bottom:1px solid #ccc;
+}
+.jd_til span {
+    margin-top: 5px;
+    line-height: 20px;
+}
+.jd_til:before {
+    content: '';
+    width: 3px;
+    height: 10px;
+    background-color: #e92322;
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+.jd_cont {
+    width: 100%;
+    background-color: #fff;
+}
+.jd_cont a {
+    width: 50%;
+    float: left;
+}
+.jd_cont a img {
+    width: 100%;
+}
+.jd_cont .a3 img {
+    margin-top: -3px;
+}
+.sk_shop {
+
+}
+.sk_shop .jd_til {
+    border: none;
+}
+.sk_shop .jd_til .til {
+    color: #e92322;
+    display: block;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+.sk_shop .jd_til:before {
+    content: '';
+    width: 18px;
+    height: 20px;
+    background: url(../img/jd-sprites.png) -84px -111px;
+    background-size: 200px;
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 1px;
+}
+.time span {
+    display: inline-block;
+    margin-top: 2px;
+    text-align: center;
+    line-height: 18px;
+    width: 16px;
+    height: 18px;
+    background-color:#000;
+    color: #fff;
+}
+.time span:nth-child(3n) {
+    background-color: #fff;
+    color: #000;
+}
+.ms_cont {
+    width: 100%;
+    padding: 20px;
+}
+.jd_cont .ms_cont li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.jd_cont .ms_cont li a {
+    width: 100%;
+}
+.jd_cont .ms_cont li img {
+    width: 60%;
+}

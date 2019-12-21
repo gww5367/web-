@@ -1,0 +1,96 @@
+*{ margin:0; padding:0; list-style:none;}
+
+/*导航条*/
+a{
+	text-decoration: none;
+}
+.daohangtiao{
+  /* background-color:#FFFFFF;*/
+   background-color:#222222;
+   width: 99.63%;
+   margin: 0 auto;
+   
+}
+
+.daohangtiao-content{
+	display: table;
+	margin: 0 auto;
+}
+.daohangtiao .daohangtiao-bar .daohangtiao-content li{
+	list-style: none;
+	/*float: left;*/
+	
+}
+.daohangtiao ul li.daohangtiao-item #gww{font-family:charcoal;font-style: oblique;font-size:inherit; }
+
+.daohangtiao ul li.daohangtiao-item {padding: 0 20px 10px 20px;width: auto;height: 50px;line-height: 50px;float: left;position: relative;}
+
+//过度效果
+.daohangtiao ul li.daohangtiao-item a {color: #fff;transition: none ease-out 0.3s;transition-property: color, background, text-indent, opacity}
+				
+.daohangtiao ul li.daohangtiao-item a { color: #FFFFFF; padding: 10px 40px; display: block; }
+
+.daohangtiao ul li.daohangtiao-item { padding: 0px .5px 10px; }
+.daohangtiao ul li.daohangtiao-item { line-height: 20px; }
+
+/*.daohangtiao ul li.daohangtiao-item a.active, .daohangtiao ul li.daohangtiao-item:hover a { padding: 10px 40px; color: #474747; background: #99FFCC; opacity: 0.6;}*/
+
+.daohangtiao ul li.daohangtiao-item { padding: 13px 0.5px; height: auto; }
+
+.ywgl-content{
+	height: 3100px;
+	width: 1100px;
+	/* border: dotted; */
+	margin: 0 auto;
+	margin-top: 3px;	
+	background-image: url(../img/磨砂背景1.jpg);
+}
+.content{
+	height: 3200px;
+	width:1100px ;
+	/* border: dotted; */
+	margin: 0 auto;
+}
+.gl1,.gl2,.gl3{
+	width: 1050px;
+	height: 670px;
+	/* border: dotted; */
+	margin: 0 auto;
+}
+.gl3{
+	height: 620px;
+}
+.gl1 img,.gl2 img,.gl3 img{
+	width: 1050px;
+	height: 550px;
+}
+.gl4{
+	width: 1050px;
+	height: 1000px;	
+	/* border: dotted; */
+	margin: 0 auto;
+}
+.gl4 img{
+	width: 1050px;
+	height: 500px;
+	}
+.ywgl-content p{
+	font-family: "新宋体";
+	font-size: 18px;
+}
+
+/*页脚*/
+#footer{
+	width: 700px;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;	
+	/* background-color:#6ABEEA; */
+}
+.banquan{
+	/* border: dotted; */
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+}
+

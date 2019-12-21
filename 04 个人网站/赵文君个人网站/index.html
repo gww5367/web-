@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="lib/bootstrap-3.3.7.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="logo">
+                    <i class="fa fa-linux fa-3x runlogo" aria-hidden="true"></i>
+            </div>
+            <div class="content">
+                <h2><span class="runw">W</span>elcome to my planet</h2>  
+                <p>“If I die young bury me in stain.Lay me down on a bed of roses
+                    Sink me in the river at dawn.Send me away with the words of a love song.
+                    Lord make me a rainbow, I’ll shine down on my monther”                    
+                </p>     
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="javascript:;" class="tome" data-name="aboutme">About me</a></li>
+                    <li><a href="javascript:;" class="tohobby" data-name="hobby">Hobby</a></li>
+                    <li><a href="javascript:;" class="tovlog" data-name="vlog">Vlog</a></li>
+                    <li><a href="javascript:;" class="tocontact" data-name="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- current 当前显示的页面 -->
+    <!-- About me --> 
+    <div class="nav-content aboutme">
+        <span class="close">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </span>
+        <span class="title">About me</span>
+        <div class="mebg">
+            <!-- <img src="./img/mebg.jpg" alt=""> -->
+        </div>
+        <p>我是赵文君 来自一个名字没有海却有海的城市：汕头 
+           痛觉神经敏感、音乐的杂食主义者
+           王小波、鲁迅 《 聊斋志异 》《天黑以后》《云边有个小卖部》只追书不看人
+           戴上耳机就是聋子、摘掉眼镜就是瞎子
+           十八线vlog博主＋间接性健身狂吃循环者
+        </p>
+    </div>
+    <!-- Hobby -->
+    <div class="nav-content hobby">
+        <span class="close">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </span>
+        <span class="title">Hobby</span>
+        <div class="mebg">
+            <!-- <img src="./img/mebg.jpg" alt=""> -->
+        </div>
+        <p>上天给了我很多变胖的机会 我都抓住了＂
+           喜欢做，更喜欢吃尽管做的机会并不多和妈妈做的＂反沙芋头＂。返沙是潮汕菜的一种烹调法，是把白糖融成糖浆后投入炸熟的食材，让其冷却凝固，待裹在食材外层的糖浆变成白霜便成。返沙芋头，就是用富含淀粉的芋头加白糖返沙制成。
+        </p>
+    </div>
+    <!-- Vlog -->
+    <div class="nav-content vlog">
+        <span class="close">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </span>
+        <span class="title">Vlog</span>
+        <div class="player">
+        <video src="./video/Vlog.mp4"></video>
+        <div class="controls">
+            <!--播放/暂停-->
+            <a href="javascript:;" class="switch fa fa-play"></a>
+            <!--播放进度-->
+            <div class="progress">
+                <div class="line"></div>
+                <div class="bar"></div>
+            </div>
+            <!--当前播放时间/播放总时长-->
+            <div class="timer">
+                <span class="current">00:00:00</span> / <span class="total">00:00:00</span>
+            </div>
+            <!--全屏/取消全屏-->
+            <a href="javascript:;" class="expand fa fa-arrows-alt"></a>
+        </div>
+    </div>
+        <p>
+        </p>
+    </div>
+    <!-- Contact -->
+    <div class="nav-content contact ">
+        <span class="close">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </span>
+        <span class="title">Contact</span>
+        <div class="form">
+           <label class="fir">NAME</label>
+           <label class="sec">EMAIL</label>
+           <input type="text" class="name">
+           <input type="text" class="email">
+           <label class="message">MESSAGE</label>
+           <textarea></textarea>
+           <input type="button" value="Send Message" class="send">
+           <input type="button" value="Reset" class="reset">
+        </div>
+    </div>
+    <div class="bg"></div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+   <script>
+       //此处为播放器相关处理函数
+      var video = $("video").get(0);  
+      // 计算时分秒函数
+       function formatTime(time) {
+
+           var h = Math.floor(time / 3600);
+           var m = Math.floor( time % 3600 / 60);
+           var s = Math.floor(time % 60);
+           // 00:00:00
+           return (h<10 ? "0" + h : h) + ":" + (m<10 ? "0" + m : m) + ":" + (s<10 ? "0" + s : s); 
+
+       }
+    // 当我们浏览器可以播放视频的时候，就让video 显示出来  让我们的时间显示出来
+       video.oncanplay = function() {  
+            $("video").show(); 
+             var totalTime = formatTime(video.duration);
+             console.log(totalTime);
+             // 让我们总的时长的盒字放入 总时长
+             $(".total").html(totalTime);
+       }
+
+    //播放和暂停按钮
+   
+       $(".switch").on("click", function(event) {
+        // 
+             event.stopPropagation();
+            if($(this).hasClass("fa-play")) {  // 播放
+              video.play();  
+              $(this).addClass('fa-pause').removeClass("fa-play");  // 切换图标
+          }  else {  // 暂停
+                video.pause();  
+              $(this).addClass("fa-play").removeClass('fa-pause');  //
+          }
+       })
+
+    // 3. 进度条显示   
+       video.ontimeupdate = function() {
+           var w = video.currentTime / video.duration * 100 + "%";
+           $(".line").css("width", w);
+           //显示我们的当前时间 
+          $(".current").html(formatTime(video.currentTime));
+       }
+     // 5. 全屏显示 
+        $(".expand").on("click", function() {
+            if($(this).hasClass("fa-arrows-alt")) {  // 播放
+              
+              video.webkitRequestFullScreen();  // 全屏显示   
+              $(this).addClass('fa-compress').removeClass("fa-arrows-alt");  // 切换图标
+          }  else {  
+               
+             document.webkitCancelFullScreen();  // 取消 全屏显示  
+              $(this).addClass("fa-arrows-alt").removeClass('fa-compress');  // 切换图标
+          }
+       })
+        // 6. 视频完成之后，重置操作
+        video.onended = function () {
+             // 当前的视频时间清零 
+             video.currentTime = 0;
+             // 同时还要把 播放按钮改为 play
+             $(".switch").addClass("fa-play").removeClass('fa-pause');
+        }
+         
+        // 7.  点击 bar 跃进效果 
+        $(".bar").on("click", function(event) {
+            // 点击的位置 /  bar 的长度 * 总的时长  =  当前视频的播放位置
+            var offset = event.offsetX;
+            console.log(offset);
+            //当前点击视频的播放位置  
+            var current = offset / $(this).width() * video.duration;
+            console.log(current);  
+            // 把当前的时间 给 currentTime 
+            video.currentTime = current; 
+        })
+        // 鼠标移入移出进度条显示隐藏
+        $('.player').on('mouseover',function(){
+          $('.controls').show();
+        })
+        $('.player').on('mouseout',function(){
+          $('.controls').hide();
+        })
+
+</script>
+</body>
+</html>

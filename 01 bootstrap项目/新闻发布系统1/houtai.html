@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./lib/css/bootstrap.css">
+	<link rel="stylesheet" href="./css/houtai.css">
+</head>
+<body>
+	
+	<div class="box container-fluid">
+        <div class="top">
+          <p>GGS新闻站后台管理系统</p>
+          <span id="yhm">管理员:admin</span>
+          <span id="outsystem">
+            <a href="javascript:;">
+              [退出系统]
+            </a>
+          </span>
+	    </div>
+	    <div class="row">
+        <!-- 左侧导航 -->
+          <div class="left col-xs-1">
+             <ul class="nav nav-tabs nav-stacked ulnav" role="tablist">
+                 <li role="presentation" class="active">
+                 	<a href="#news-releases" aria-controls="news-releases" role="tab" data-toggle="tab">新闻发布
+                 	</a>
+                 </li>
+                 <li role="presentation">
+                 	<a href="#newsor" aria-controls="newsor" role="tab" data-toggle="tab">新闻管理
+                 	</a>
+                 </li>
+                 <li role="presentation">
+                 	<a href="#news-removals" aria-controls="news-removals" role= "tab" data-toggle="tab">新闻栏目
+                 	</a>
+                 </li>
+                 <li role="presentation">
+                 	<a href="#user-management" aria-controls="user-management" role="tab" data-toggle="tab">用户管理
+                 	</a>
+                 </li>
+             </ul>
+          </div>
+          <!-- 右侧内容 -->
+          <div class="tab-content col-xs-7 col-xs-offset-2 right">
+            <!-- 新闻发布 -->
+             <div role="tabpanel" class="tab-pane active" id="news-releases">
+                  <form class="form-horizontal">
+                      <div class="form-group">
+                        <label for="newstitle" class="col-sm-2 control-label">新闻标题</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="newstitle" placeholder="内容">
+                        </div>
+                      </div>
+
+                     <div class="form-group">
+                      <label for="option" class="col-sm-2 control-label">新闻栏目</label>
+                      <div class="col-sm-10">
+                      <select class="form-control" id="option">
+                          <option>热点新闻</option>
+                          <option>国内</option>
+                          <option>国际</option>
+                          <option>军事</option>
+                          <option>体育</option>
+                          <option>娱乐</option>
+                          <option>科技</option>
+                          <option>汽车</option>
+                          <option>教育</option>
+                      </select>
+                      </div>
+                     </div>
+
+                     <div class="form-group">
+                      <label for="newsimg" class="col-sm-2 control-label">新闻图片</label>
+                      <div class="col-sm-10">
+                      <input type="file" id="newsimg">
+                      </div>
+                     </div>
+
+                     <div class="form-group">
+                      <label for="newscontent" class="col-sm-2 control-label">新闻内容</label>
+                      <div class="col-sm-10">
+                      <textarea class="form-control" rows="6" id="newscontent"></textarea>
+                      </div>
+                     </div>
+
+                     <button type="button" class="btn btn-success col-sm-2 col-xs-offset-2">提交数据</button>
+
+                   </form>
+
+
+             </div>
+             <!-- 新闻管理 -->
+             <div role="tabpanel" class="tab-pane" id="newsor">
+                   <table class="table table-bordered">
+                       <thead>
+                           <tr class="active">
+                           	<th class="col-xs-1">ID</th>
+                           	<th class="col-xs-2">新闻标题</th>
+                           	<th class="col-xs-1">新闻栏目</th>
+                           	<th>新闻内容</th>
+                           	<th class="col-xs-1">发布人</th>
+                           	<th class="col-xs-1">修改</th>
+                           	<th class="col-xs-1">删除</th>
+                           </tr>
+                       </thead>
+
+                       <tbody>
+                           <tr>
+                            <td>1</td>
+                           	<td>PISA排名出炉，中国学生被评全球第一</td>
+                           	<td>热点新闻</td>
+                           	<td>填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容填充内容</td>
+                           	<td>admin</td>
+                           	<td>
+                              <a href="javascript:;" class="edit">
+                                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                              </a>
+                            </td>
+                           	<td>
+                              <a href="javascript:;" class="delete">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                              </a>
+                            </td>
+                           </tr>
+                       </tbody>
+                   </table>
+                   <!-- 分页 -->
+                   <nav aria-label="Page navigation">
+                       <ul class="pagination pagination-sm">
+                         <li>
+                           <a href="#" aria-label="Previous">
+                             <span aria-hidden="true">&laquo;</span>
+                           </a>
+                         </li>
+                         <li><a href="#">1</a></li>
+                         <li><a href="#">2</a></li>
+                         <li><a href="#">3</a></li>
+                         <li><a href="#">4</a></li>
+                         <li><a href="#">5</a></li>
+                         <li>
+                           <a href="#" aria-label="Next">
+                             <span aria-hidden="true">&raquo;</span>
+                           </a>
+                         </li>
+                       </ul>
+                   </nav>
+             </div>
+             <!-- 新闻栏目 -->
+             <div role="tabpanel" class="tab-pane" id="news-removals">
+                   <table class="table table-bordered">
+                       <thead>
+                           <tr class="active">
+                           	<th>ID</th>
+                           	<th>栏目名称</th>
+                           	<th class="col-xs-1">删除</th>
+                           </tr>
+                       </thead>
+
+                       <tbody>
+                           <tr>
+                           	<td>1</td>
+                           	<td>热点新闻</td>
+                           	<td>
+                              <a href="javascript:;" class="delete">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                              </a>
+                            </td>
+                           </tr>
+                       </tbody>
+                   </table>
+
+             </div>
+             <!-- 用户管理 -->
+             <div role="tabpanel" class="tab-pane" id="user-management">
+                   <table class="table table-bordered">
+                       <thead>
+                           <tr class="active">
+                            <th>ID</th>
+                            <th>用户名</th>
+                            <th>账号类型</th>
+                            <th class="col-xs-1">删除</th>
+                           </tr>
+                       </thead>
+
+                       <tbody>
+                           <tr>
+                            <td>1</td>
+                            <td>admin</td>
+                            <td>系统管理员</td>
+                            <td>
+                              <a href="javascript:;" class="delete">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                              </a>
+                            </td>
+                           </tr>
+                       </tbody>
+                   </table>
+                   <!-- 分页 -->
+                   <nav aria-label="Page navigation">
+                       <ul class="pagination pagination-sm">
+                         <li>
+                           <a href="#" aria-label="Previous">
+                             <span aria-hidden="true">&laquo;</span>
+                           </a>
+                         </li>
+                         <li><a href="#">1</a></li>
+                         <li><a href="#">2</a></li>
+                         <li><a href="#">3</a></li>
+                         <li><a href="#">4</a></li>
+                         <li><a href="#">5</a></li>
+                         <li>
+                           <a href="#" aria-label="Next">
+                             <span aria-hidden="true">&raquo;</span>
+                           </a>
+                         </li>
+                       </ul>
+                   </nav>
+             </div>
+          </div>
+
+        </div>
+
+	    <div class="bottom">
+           <p>广州工商学院</p>
+           <p>Copyright © 2019 16网工B3班 All rights reserved.</p>
+	    </div>
+	</div>
+
+  <!-- 修改新闻 -->
+  <div class="editor">
+        <span class="close">
+            <!-- <i class="fa fa-times fa-2x" aria-hidden="true"></i> -->
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </span>
+       <form class="form-inline">
+           <div class="form-group ">
+             <label for="ntitle">新闻标题:</label>
+             <input type="text" class="form-control" id="ntitle">
+           </div>
+           <div class="form-group ">
+             <label for="nremoval">新闻栏目:</label>
+             <input type="text" class="form-control" id="nremoval">
+           </div>
+           <div class="form-group ">
+             <label for="ncontent">新闻内容:</label>
+             <input type="text" class="form-control" id="ncontent">
+           </div>
+           <div class="form-group ">
+             <label for="nperson">发布人:</label>
+             <input type="text" class="form-control" id="nperson">
+           </div>
+           <button type="submit" class="btn btn-default">提交</button>
+       </form>
+  </div>
+
+  <!-- 删除 -->
+  <div class="del">
+     <p>是否要删除数据?</p>
+     <button type="button" class="btn btn-danger">删除</button>
+     <button type="button" class="btn btn-primary cancle">取消</button>
+  </div>
+
+	  <script src="./lib/js/jquery.min.js"></script>
+      <script src="./lib/js/bootstrap.js"></script>
+      <script src="./js/houtai.js"></script>
+</body>
+</html>

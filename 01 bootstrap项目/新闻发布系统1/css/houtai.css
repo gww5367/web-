@@ -1,0 +1,196 @@
+/* 初始化样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html {
+	min-width: 768px;
+	height: 100vh;
+	overflow-x: hidden;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+a {
+	color: black;
+}
+li {
+    list-style: none;
+}
+ul,li {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6, p {
+    margin: 0;
+    padding: 0;
+}
+.bd-right {
+	border-right: 1px solid white;
+}
+/* 头部 */
+.container-fluid {
+	padding: 0px;
+}
+.box {
+	position: relative;
+}
+.top {
+    height: 10vh;
+	background-color: #222;
+	color: white;
+	line-height: 70px;
+	text-align: center;
+	width: 100%;
+	font-size: 28px;
+	position: relative;
+}
+.top #yhm,
+.top #outsystem {
+	position: absolute;
+    bottom: 5px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.top #yhm {
+    left: 15px;
+}
+.top #outsystem {
+    right: 15px;
+}
+.top #outsystem a {
+	color: white;
+	text-decoration: none;
+}
+.bottom {
+	position: absolute;
+	top: 90vh;
+    height: 10vh;
+	background-color: #222;
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+.bottom p {
+	margin-top: 15px;
+}
+
+.nav-tabs {
+	/* margin-top: 1px; */
+	padding-top: 1px;
+}
+.nav-stacked > li {
+	width: 130px;
+}
+.nav-tabs > li > a {
+	border: none;
+	border-radius:0;
+	background-color: #222;
+	color: white;
+	padding: 18px 0px;
+	text-align: center;
+}
+.nav-tabs > li > a:hover {
+	background-color: black;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	border: none;
+	background-color: black;
+	color: white;
+}
+.ulnav {
+	height: 80vh;
+	width: 128px;
+	background-color: #D8D8D8;
+}
+.right {
+	margin-top: 20px;
+}
+.pagination li a,
+.pagination li a:hover
+ {
+	color: black
+} 
+nav {
+	display: flex;
+	justify-content: center;
+}
+/*编辑新闻*/
+.editor {
+	position: absolute;
+	z-index: 999;
+	background-color: #222;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+	height: 400px;
+	display: none;
+	border-radius: 10px;
+}
+.form-group {
+	width: 100%;
+}
+.editor label {
+	color: white;
+	line-height: 40px;
+}
+.editor form {
+	margin-top: 15px;
+	text-align: center;
+}
+.editor .form-group {
+	text-align: center;
+	margin-bottom: 5px;
+}
+.editor input {
+	width: 80%!important;
+	float: right;
+	height: 40px;
+	margin-right: 15px;
+}
+.editor button {
+	width: 50%!important;
+	height: 40px;
+}
+.close span{
+	color: #eee!important;
+	font-size: 28px;
+	margin: 8px 8px 8px 0;
+}
+/*删除*/
+.del {
+    position: absolute;
+	z-index: 999;
+	background-color: #222;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	height: 100px;
+	text-align: center;
+	border-radius: 15px;
+	display: none;
+}
+.del p {
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 10px;
+}
+.del button {
+	width: 100px;
+	margin-top: 5px;
+}
+.box table {
+	table-layout:fixed;
+}
+.box td {
+	width:100%;  
+    word-break:keep-all;/* 不换行 */     
+    white-space:nowrap;/* 不换行 */  
+    overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */  
+    text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用*/  
+}

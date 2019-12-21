@@ -1,0 +1,225 @@
+.bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    width: 1000px;
+    height: 1000px;
+    transition: all 1s;
+}
+.bg2 {
+    transform:translate(-50%,-50%) rotateZ(-60deg);
+}
+.row1 div,
+.row2 div,
+.row3 div{
+    border-radius: 50%;
+    background: -webkit-linear-gradient(top,#F8F8F8,#D0D0D0);
+}
+.row1 .circle1,
+.row1 .circle2,
+.row1 .circle3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -320px;
+    margin-left: 60px;
+}
+.row1 .circle2 {
+    width: 80px;
+    height: 80px;
+    margin-top: -260px;
+    margin-left: 250px;
+}
+.row1 .circle3 {
+    width: 100px;
+    height: 100px;
+    margin-top: -300px;
+    margin-left: 460px;
+}
+.row2 .circle1,
+.row2 .circle2,
+.row2 .circle3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -250px;
+    margin-left: -490px;
+}
+.row2 .circle2 {
+    width: 250px;
+    height: 250px;
+    margin-top: -10px;
+    margin-left: -480px;
+}
+.row2 .circle3 {
+    width: 300px;
+    height: 300px;
+    margin-top: -200px;
+    margin-left: 550px;
+}
+.row3 .circle1,
+.row3 .circle2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -80px;
+    margin-left: 350px;
+}
+.row3 .circle2 {
+    width: 350px;
+    height: 350px;
+    margin-top: -10px;
+    margin-left: -150px;
+}
+.row1 div {
+    animation: run_circle 60s linear infinite;
+}
+.row2 div {
+    animation: run_circle 100s linear infinite;
+}
+.row3 div {
+    animation: run_circle 140s linear infinite;
+}
+.section1,
+.section2,
+section4 {
+    perspective: 1000px;
+}
+
+.section1_ani{
+    width: 880px;
+    height: 320px;
+    background: url("../images/skin.png");
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%) translateZ(600px) rotateY(-180deg);
+    transition:all 1s;
+}
+.section1_ani2 {
+    transform: translate(-50%,-50%) translateZ(0px);
+}
+.section_num {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%) translateZ(-2000px) scale(0.2);
+    transition:all 1s;
+}
+.section3 {
+    perspective: 1000px;
+    overflow: hidden;
+}
+.section_dv {
+    width: 2000px;
+    height: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -305px;
+    margin-left: -350px;
+    background-color: pink;
+    transform:translateX(2000px) rotateY(-120deg) rotateX(30deg);
+    transition:all 1s;
+    perspective: 500px;
+    background-color: #F8F8F8;
+    border: 2px solid #C8C8C8;
+}
+.section3_logo {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    background-color: #E0E0E0;
+    width: 2000px;
+    height: 50px;
+}
+.p3ui_tab {
+    transform: translate(20px,-10px) rotateX(-5deg);
+}
+.uiicon1 {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.uiicon2 {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+.uiicon3 {
+    position: absolute;
+    top: 15px;
+    left: 100px;
+}
+.section_mes {
+    width: 600px;
+    height: 400px;
+    transform: translateX(-2000px) translateZ(2000px);
+    transition: all 1.5s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -80px;
+    margin-left: -600px;
+}
+.title3 {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+.title2_3 {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+.p2pop1,
+.p2pop2,
+.p2pop3,
+.p2pop4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -240px;
+    /*transform: translateX(-2000px) translateZ(-1600px)  rotateY(-180deg);*/
+    transform: translateX(-2000px) rotateY(120deg) rotateX(30deg);
+    transition: all 1.5s;
+}
+.p2pop2 {
+    margin-left: -280px;
+    margin-top: 10px;
+}
+.p2pop3 {
+    margin-left: -250px;
+    margin-top: -260px;
+}
+.p2pop4 {
+    margin-left: 40px;
+    margin-top: -225px;
+}
+.section4_til {
+    position: absolute;
+    margin-left: -220px;
+    margin-top: 120px;
+    left: 50%;
+    top: 50%;
+
+}
+.ani {
+    transform: translateX(2000px) ;
+}
+@keyframes run_circle {
+    from {
+        transform: translateX(0px) rotate(0deg);
+    }
+    to {
+        transform: translateX(-1800px) rotate(-4600deg);
+    }
+}

@@ -1,0 +1,197 @@
+/* 基础设置 */
+body,html {
+margin: 0;
+padding: 0;
+/*background-color: #fff;*/
+background-color:#FFFFF0;
+/* overflow:-Scroll;
+overflow:auto; */
+}
+
+a{
+	text-decoration: none;
+}
+img {
+	width: 100%;
+}
+
+a:focus, a:hover {
+	text-decoration: none;
+	outline: none
+}
+
+/*导航条*/
+.daohangtiao{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0 ;
+} /* 固定导航条 */
+
+.daohangtiao{
+   background-color:#222222;
+   width: 99.63%;
+   margin: 0 auto;
+   z-index: 1;
+  
+}
+
+.daohangtiao-content{
+	display: table;
+	margin: 0 auto;
+}
+.daohangtiao .daohangtiao-bar .daohangtiao-content li{
+	list-style: none;
+	/*float: left;*/
+	
+}
+.daohangtiao ul li.daohangtiao-item #gww{font-family:charcoal;font-style: oblique;font-size:inherit; }
+
+.daohangtiao ul li.daohangtiao-item {padding: 0 20px 10px 20px;width: auto;height: 50px;line-height: 50px;float: left;position: relative;}
+
+//过度效果
+.daohangtiao ul li.daohangtiao-item a {color: #fff;transition: none ease-out 0.3s;transition-property: color, background, text-indent, opacity}
+				
+.daohangtiao ul li.daohangtiao-item a { color: #FFFFFF; padding: 10px 40px; display: block; }
+
+.daohangtiao ul li.daohangtiao-item { padding: 0px .5px 10px; }
+.daohangtiao ul li.daohangtiao-item { line-height: 20px; }
+
+/*.daohangtiao ul li.daohangtiao-item a.active, .daohangtiao ul li.daohangtiao-item:hover a { padding: 10px 40px; color: #474747; background: #99FFCC; opacity: 0.6;}*/
+
+.daohangtiao ul li.daohangtiao-item { padding: 13px 0.5px; height: auto; }
+
+.qdjj,.jdjs,.ywgl,.nwwd,.gyzz{
+  
+}
+
+
+
+
+/*景点介绍*/
+.jdjs .c{
+	height: 2050px;
+	width: 100%;
+	margin: 0 auto;
+	/* border: dotted; */
+}
+.jdjs .c .c1{	
+	/*text-align: center;*/
+	margin: 0 auto;
+	margin-top: 70px;
+	background-color: #FFFFF0;
+	width:900px ;
+	/*padding-left: 350px;*/
+	/*padding-right: 250px;*/
+	/* border: dotted; */
+	}
+.jdjs .c .c1 .c1-d1,.jdjs .c .c1 .c1-d2{
+	float: left;
+	width: 450px;
+	height: 370px;
+	/* border: dotted; */
+}
+.jdjs .c .c1 .c1-d2{
+
+	width: 440px;
+	/* border: dotted; */
+}
+.jdjs .c .c1 .c1-d1 #xuhao,.jdjs .c .c1 .c1-d2 #xuhao{
+	 height: 110px;
+	 width: 110px;
+	 /* border: dotted; */
+}
+
+.jdjs .c .c1 #tow ul,.jdjs .c .c1 #four ul{
+	padding-left: 130px;
+}
+.jdjs .c .c1 #one ul,.jdjs .c .c1 #three ul{
+	padding-left: 120px;
+}
+.jdjs .c .c1 #tow #xuhao,.jdjs .c .c1 #four #xuhao{
+	padding-left: 10px;
+	/* border: dotted; */
+}
+.jdjs .c .c1 #title p{
+	font-size: 25px;
+}
+.jdjs .c  ul li{
+	list-style-type: square;
+}
+.jdjs .c .c1 .c1-d2{
+	text-align: center;
+}
+.jdjs .c .c1 .c1-d2 img{
+	width: 430px;
+	height: 370px;	
+	/* border: dotted; */
+}
+.jdjs .c .c1 .c1-d1 .title-image img{
+	/* border: dotted; */
+	float: left;
+}
+.jdjs .c .c1 .c1-d1 #title{
+	/* border: dotted; */
+	height: 110px;
+	line-height: 130px;
+}
+.jdjs .c .c1 #title p{font-family: "微软雅黑";font-size: 30px;}
+.jdjs .c .c1 .neirong p{font-family: "微软雅黑";font-size: 18px;padding-left: 35px;}
+.jdjs .c .c1 #one p,.jdjs .c .c1 #three p{padding-right: 30px;}
+.hr1{
+	/* border: dotted; */
+	box-shadow: darkgrey 10px 10px 25px 1px ;
+	width: 100%;
+	height: 450px;
+	margin-bottom: -75px;
+	background-image: url(../img/磨砂背景2.jpg);
+}
+.hr2{
+	box-shadow: darkgrey 10px 10px 25px 1px ;
+	width: 100%;
+	height: 450px;
+	margin-bottom: -70px;
+	background-image: url(../img/磨砂背景2.jpg);
+}
+.hr3{
+	/* border: dotted; */
+	box-shadow: darkgrey 10px 10px 25px 1px ;
+	width: 100%;
+	height: 450px;
+	margin-bottom: -75px;
+	background-image: url(../img/磨砂背景2.jpg);
+}
+.hr4{
+	/* border: dotted; */
+	width: 100%;
+	height: 450px;
+	box-shadow: darkgrey 10px 10px 25px 1px ;
+	margin-bottom: -75px;
+	background-image: url(../img/磨砂背景2.jpg);
+}
+/* 鼠标经过图片放大 */
+.c1-d2 {
+	overflow: hidden;
+}
+.c1-d2 img{
+	/* width: 50px; */
+	/* height: 50px; */
+  cursor: pointer;
+  transition: all 0.6s;
+  /* z-index: -100; */
+}
+.c1-d2 img:hover{
+  transform: scale(1.1);
+}
+/*页脚*/
+#footer{
+	/* margin-top: 90px; */
+	height: 100px;
+	text-align: center;
+	/* background-color:#6ABEEA; */
+	/* border: dotted; */
+}
+#footer p{
+		margin-top: 20px;
+	    margin-bottom: -15px;
+}
+

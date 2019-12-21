@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- onselectstart="return false" -->
+<html >
+<head>
+<meta charset="utf-8" />
+<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->
+	<link rel="stylesheet" type="text/css" href="css/mszs.css"/>
+	<!-- <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+</head>
+<body>
+<div id="box">
+    <div class="daohangtiao">
+    	    <div class="daohangtiao-bar">
+			 <ul class="daohangtiao-content"><li class="daohangtiao-item"><a id="gww"href="index.html" >gww</a>
+
+	</li><li class="daohangtiao-item"><a href="index.html"class="active" target="_self">首页</a>
+		
+	</li><li class="daohangtiao-item"><a href="index.html#qdjj" >青岛简介</a>
+	
+	
+	</li><li class="daohangtiao-item"><a href="index.html#jdjs" >景点介绍</a>
+	
+	
+	</li><li class="daohangtiao-item"><a href="ywgl.html" >游玩攻略</a>
+	
+	
+	</li><li class="daohangtiao-item"><a href="msj.html" >美食街</a>
+	
+	
+	</li><li class="daohangtiao-item"><a href="mszs.html" >美食展示</a>
+
+
+    </li>
+             </ul>
+            </div>
+    </div>
+    <div class="mszs-content">
+    	   <div style='position:fixed;width:90%;height:90%;background-color:rgb(0,0,0,0)' id='ck'>
+    	   	<div class='ck' id='ckw'>
+    	   		<img id='bgImg' />
+    	   	</div>
+    	   </div>
+    	    
+    	    
+    	   <!-- 下面则是主页内容，先只给几个图片 -->
+    	    
+    	   <div>
+    	       <img class='mszs-img' src="img/5-1.jpg"id="pd" onclick='showBgImg(this)'/> 
+    	       <img class='mszs-img' src="img/5-2.jpg" onclick='showBgImg(this)'/>
+    	       <img class='mszs-img' src="img/5-3.jpg" onclick='showBgImg(this)'/>
+    	       <img class='mszs-img' src="img/5-4.jpg"id="pd" onclick='showBgImg(this)'/>
+			   <img class='mszs-img' src="img/5-5.jpg" onclick='showBgImg(this)'/> 
+			   <img class='mszs-img' src="img/5-6.jpg" onclick='showBgImg(this)'/>
+			   <img class='mszs-img' src="img/5-7.jpg"id="pd" onclick='showBgImg(this)'/>
+			   <img class='mszs-img' src="img/5-8.jpg" onclick='showBgImg(this)'/>
+			   <img class='mszs-img' src="img/5-9.jpg" onclick='showBgImg(this)'/> 
+			   <img class='mszs-img' src="img/5-10.jpg"id="pd"onclick='showBgImg(this)'/>
+			   <img class='mszs-img' src="img/5-11.jpg" onclick='showBgImg(this)'/>
+			   <img class='mszs-img' src="img/5-12.jpg" onclick='showBgImg(this)'/>
+    	   </div>
+    	    
+    	   <script>
+    	       var ck = document.getElementById('ck');
+    	   	var ckw= document.getElementById('ckw');
+    	       var bgImg = document.getElementById('bgImg');
+    	    
+    	    
+    	       function showBgImg(e) {
+    	   		ck.style.display = 'block';
+    	   		ckw.style.display = 'block';
+    	   		bgImg.src = e.src;
+    	   	}
+    	    
+    	   	bgImg.onclick = function() {
+    	   		ckw.style.display = 'none';
+    	   		ck.style.display = 'none';
+    	   	}
+    	   </script>
+    </div>
+	 <div id="footer">
+		<div class="banquan">
+		 <p>广州工商学院</p>
+	     <p>Copyright © 2018-2020 guanweiwen. All Rights Reserved.</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

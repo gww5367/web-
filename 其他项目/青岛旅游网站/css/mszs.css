@@ -1,0 +1,102 @@
+*{ margin:0; padding:0; list-style:none;}
+
+/*导航条*/
+a{
+	text-decoration: none;
+}
+.daohangtiao{
+  /* background-color:#FFFFFF;*/
+   background-color:#222222;
+   width: 99.63%;
+   margin: 0 auto;
+   
+}
+
+.daohangtiao-content{
+	display: table;
+	margin: 0 auto;
+}
+.daohangtiao .daohangtiao-bar .daohangtiao-content li{
+	list-style: none;
+	/*float: left;*/
+	
+}
+.daohangtiao ul li.daohangtiao-item #gww{font-family:charcoal;font-style: oblique;font-size:inherit; }
+
+.daohangtiao ul li.daohangtiao-item {padding: 0 20px 10px 20px;width: auto;height: 50px;line-height: 50px;float: left;position: relative;}
+
+//过度效果
+.daohangtiao ul li.daohangtiao-item a {color: #fff;transition: none ease-out 0.3s;transition-property: color, background, text-indent, opacity}
+				
+.daohangtiao ul li.daohangtiao-item a { color: #FFFFFF; padding: 10px 40px; display: block; }
+
+.daohangtiao ul li.daohangtiao-item { padding: 0px .5px 10px; }
+.daohangtiao ul li.daohangtiao-item { line-height: 20px; }
+
+/*.daohangtiao ul li.daohangtiao-item a.active, .daohangtiao ul li.daohangtiao-item:hover a { padding: 10px 40px; color: #474747; background: #99FFCC; opacity: 0.6;}*/
+
+.daohangtiao ul li.daohangtiao-item { padding: 13px 0.5px; height: auto; }
+
+.mszs-content{
+	height: 1400px;
+	width: 1100px;
+	/* border: dotted; */
+	margin: 0 auto;
+	margin-top: 3px;	
+	background-image: url(../img/磨砂背景1.jpg);
+}
+#ck {
+	display: none;
+}
+.ck {
+    margin: auto;
+    padding-top: 110px;
+	padding-right: 210px;
+	/* padding-left: 1%; */
+/*   width: 80%;
+    height: 80%; */
+	width: 500px;
+	height: 500px;
+    z-index: 1;
+}
+.ck img {
+    animation-name: zoom;
+	animation-duration: 0.6s;
+    display: block;
+    padding: 10px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 2px 6px rgb(0, 0, 0, 0), 0 10px 20px rgb(0, 0, 0, 0);
+    border-radius: 12px;
+    border: 1px solid white;
+}
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+.mszs-img {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    display: block;
+    padding: 40px;
+}
+#pd{padding-left: 98px;}
+
+/*页脚*/
+#footer{
+	width: 700px;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;	
+	/* background-color:#6ABEEA; */
+}
+.banquan{
+	/* border: dotted; */
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+}
+

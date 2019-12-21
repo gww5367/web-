@@ -1,0 +1,648 @@
+  /*CSS初始化设置*/
+        * {
+        	margin: 0px;
+        	padding: 0px;
+        }
+        ul {
+        	list-style: none;
+        }
+        a {
+        	text-decoration: none;
+        	color: #424243;
+        }
+        input {
+            outline: 0; /*取消输入框轮廓线*/
+        }
+        .clearfix:before,  /*clearfix类为一个清除浮动的方法*/
+        .clearfix:after {
+            display: table;
+            content: "";
+        }
+        .clearfix:after {
+        	clear: both;
+        }
+        .clearfix {   /*低版本IE清除浮动*/
+        	*zoom: 1;
+        }
+        body {
+        	background-color: #f3f5f7;
+            height: 3000px;
+        }
+        .container {  /*版心区域都是1200px，定义一个公共部分调用*/
+        	width: 1200px;
+        	margin: 0 auto;
+        }
+        /* 页面头部分 */
+        header {
+        	height: 100px;
+        	overflow: hidden;
+        }
+        nav {
+        	width: 1366px;
+        	height: 42px;
+        	margin: 26px auto;
+        }
+        .logo {
+        	float: left;
+            width: 195px;
+            height: 41px;
+            background:  url(../images/sprite.png) 0 -27px no-repeat;
+        }
+        .navbar {
+        	height: 42px;
+        	line-height: 42px;  /*行高给父亲，子代会继承*/
+        	float: left;
+        	margin-left: 65px;  
+        }
+        .navbar ul li {
+        	float: left;
+        	padding: 0 10px;
+        	
+        }
+        .navbar ul li a {
+        	display: block;  /*a是行内元素，需要转换为块级元素从，才能给高度*/
+        	height: 42px;
+        	
+        }
+        .navbar ul li a:hover {
+        	border-bottom: 2px solid #00a4ff;
+        }
+        /* 页面头部分结束 */
+        /*搜索框部分*/
+        .serch {
+        	width: 410px;
+        	height: 38px;
+        	border: 1px solid #00a4ff;
+        	float: right;
+        }
+        .serch input[type=text] {
+        	width: 340px;
+        	height: 38px;
+        	border: none;
+        	padding-left: 20px;
+        	float: left;
+        }
+        .serch input[type=submit] {
+        	width: 50px;
+        	height: 39px;
+        	border: none;
+        	float: left;
+            cursor: pointer;
+            
+        	background: #00a4ff url(../images/sprite.png) 15px -137px no-repeat;
+        }
+        /*搜索框部分结束*/
+        /*个人信息部分*/
+        .personal {
+        	height: 42px;
+        	line-height: 42px;
+        	float: right;
+        	margin:  0 15px 0 35px;
+        }
+        .personal img {
+        	margin: 0 8px;
+            vertical-align: middle;
+        }
+        /*个人信息部分结束*/
+        /*banner区域开始*/
+        .banner {
+        	height: 420px;
+        	background-color: #1c036c;
+        }
+        .banner-in {
+        	height: 420px;
+            position: relative;
+        	background:  url(../images/banner2.png) 0 0 no-repeat;  	
+        }
+        /*侧导航开始*/
+        .slidebar {
+        	width: 190px;
+        	height: 420px;
+        	background-color: rgba(0,0,0,0.3);/*背景半透明*/
+        	float: left;
+        }
+        .slidebar li a {
+            color: #fff;
+        	font-size: 16px;
+        	display: block;
+        	height: 44px;
+        	/*此处可以不给高度，因为单行垂直居中有了行高不需要给高度*/
+        	line-height: 44px; 
+        	padding: 0 20px;
+        }
+        .slidebar li a:hover {
+        	color: #00a4ff;
+        }
+        .slidebar li span {
+        	float: right;
+        	font-family: arial;  /*使符号变细一点，一般都会选择arial字体*/
+        }
+        /*侧导航结束*/
+        /*课程表开始*/
+        .Class-Schedule {
+            width: 228px;
+            height: 300px;
+            background-color: #fff;
+            float: right;
+            margin-top: 50px;
+
+        }
+        .Class-Schedule dt {
+        	line-height: 48px;
+        	text-align: center;
+        	background-color: #9bceea;
+        	font-weight: 800;
+        	color: #fff;
+        	letter-spacing: 2px;
+        }
+        .Class-Schedule dd {
+        	height: 60px;
+        	width: 194px;
+        	margin: 0 auto;
+            border-bottom: 1px solid #efefef;
+            padding-top: 16px;
+            box-sizing: border-box;
+        }
+        .Class-Schedule dd h4 {
+        	font-size: 16px;
+        	font-weight: normal;
+        	color: #4e4e4e;
+        }
+        .Class-Schedule dd p {
+        	font-size: 14px;
+        	color: #5a5a5a;
+        }
+        /*利用伪类选择最后一个dd*/
+        .Class-Schedule dd:last-child {
+        	border: 0;     
+        }
+        .Class-Schedule dd:last-child a { 
+            border: 1px solid #00a4ff;	
+            display: block;
+            font-weight: 700;
+            font-size: 18px;
+            color: #00a4ff;
+            letter-spacing: 1px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            width: 194px;
+            transition: all 0.7s;
+        }
+        .Class-Schedule dd:last-child a:hover {
+        	background-color: #00a4ff;
+        	color: #fff;
+        }
+        /*课程表结束*/
+        /*circle开始*/
+        .circle {
+            width: 180px;
+            height: 20px;
+            position: absolute;
+            left: 50%;
+            bottom: 30px;
+            margin-left: -115px;
+        }
+        .circle li {
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255,255,255,0.4);
+            float: left;
+            margin: 4px 8px;
+            border-radius: 50%;
+        }
+        .circle li:first-child {
+            width: 20px;
+            height: 12px;
+            border-radius: 10px;
+            background-color: #fafafa;
+        }
+        /*circle结束*/
+        /*banner区域结束*/
+        /*精品推荐开始*/
+        .recommend {
+        	height: 60px;
+        	width: 1200px;
+        	margin: 10px auto;
+        	background-color: #fff;
+        	box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+        }
+        .recommend ul li {
+        	float: left;
+        	margin-top: 15px;
+        }
+        .recommend  li a {
+        	display: block;
+        	font-size: 13px;
+        	color: #050505;
+        	width: 125px;
+        	height: 30px;
+        	line-height: 30px;
+        	border-right: 1px solid #bfbfbf;
+        	text-align: center;
+        }
+        .recommend  li a:hover {
+        	color: #00a4ff;
+        }
+        .recommend li:last-child {
+        	float: right;	
+        }
+        .recommend li:first-child a {
+        	color: #00a4ff;
+        	font-size: 15px;
+        	font-weight: 600;
+        }
+        .recommend li:last-child a {
+        	border: 0;
+        	color: #00a4ff;
+        	font-size: 12px;    	
+        }
+        /*精品推荐结束*/
+        /*精品推荐大模块*/
+        .reco-products,
+        .pro-started,
+        .data-analyst,
+        .mach-learning,
+        .front-end {   /*精品推荐,编程入门,数据分析师，机器学习工程师，前端公共部分*/
+           margin-top: 35px; 
+        }
+        .reco-hd,
+        .pro-hd,
+        .data-hd,
+        .mach-hd,
+        .front-hd {   /*头部开始*/
+            height: 40px;
+            margin-bottom: 12px;
+        }
+        .reco-hd h4,
+        .pro-hd h4,
+        .data-hd h4,
+        .mach-hd h4,
+        .front-hd h4{    
+            float: left;
+            color: #494949;
+            font-size: 17px;
+            width: 400px;
+            font-weight: normal;
+        }
+        .reco-hd a:last-child,    /*精品推荐,编程入门,数据分析师，机器学习工程师\前端公共部分*/
+        .pro-hd a:last-child,
+        .data-hd a:last-child,
+        .mach-hd a:last-child,
+        .front-hd a:last-child {   /*此处定义的a为公共部分的，即接下来的模块采取相同样式*/
+            float: right;
+            font-size: 12px;
+            color: #a5a5a5;
+            margin-right: 32px;
+        }
+        .reco-hd a:hover,
+        .pro-hd a:hover,
+        .data-hd a:hover,
+        .mach-hd a:hover,
+        .front-hd a:hover {     /*精品推荐,编程入门,数据分析师，机器学习工程师公共部分*/
+            color: #00a4ff;
+        }/*头部结束*/
+        .reco-bd ul li img,  /*此处为编程入门、机器工程师、前端工程师公共部分*/
+        .mach-bd ul li img,
+        .front-bd ul li img { 
+            width: 228px;
+        }
+        .reco-bd  li h4,  
+        .reco-bd  li p,
+        .mach-bd  li h4,
+        .mach-bd  li p,
+        .front-bd  li h4,
+        .front-bd  li p {
+            margin: 0 20px 0 24px;
+        }
+        .reco-bd  li h4,
+        .mach-bd  li h4,
+        .front-bd  li h4 {
+            color: #050505;
+            margin-top: 15px;
+            line-height: 21px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .reco-bd  li p,
+        .mach-bd  li p,
+        .front-bd  li p {
+            color: #999999;
+            font-size: 12px;
+            margin-top: 21px;
+        }
+        .reco-bd  li span,
+        .mach-bd  li span,
+        .front-bd  li span {
+            color: #ff7c2d;
+        } 
+        .reco-bd ul li,
+        .mach-bd ul li,
+        .front-bd ul li {
+            width: 228px;
+            height: 270px;
+            background-color: #fff;
+            /*overflow: hidden;*/
+            box-shadow: 0 3px 4px rgba(0,0,0,0.1);
+            float: left;
+            margin-right: 14px;
+            margin-bottom: 15px;
+            transition:  all 0.4s;
+        }
+        .reco-bd ul li:hover,
+        .mach-bd ul li:hover,
+        .front-bd ul li:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        .reco-bd ul li:nth-child(5n),
+        .mach-bd ul li:nth-child(5n),
+        .front-bd ul li:nth-child(5n) {  /*li的次序为5的倍数*/
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+        .reco-bd ul li:nth-child(5n-4),
+        .reco-bd ul li:nth-child(5n-3),
+        .mach-bd ul li:nth-child(5n-4),
+        .mach-bd ul li:nth-child(5n-3),
+        .front-bd ul li:nth-child(5n-4),
+        .front-bd ul li:nth-child(5n-3) { /*此处的作用是选择第一列与第二列*/
+            position: relative;   
+        }
+        .reco-bd ul li .hot,
+        .reco-bd ul li .new,
+        .mach-bd ul li .hot,
+        .mach-bd ul li .new,
+        .front-bd ul li .hot,
+        .front-bd ul li .new {   /*HOT、NEW图标*/
+            width: 39px;
+            position: absolute;
+            right: -4px;
+            top: 5px;              /*编程入门、机器工程师、前端工程师公共部分结束*/
+        }/*精品推荐结束*/      
+        /*编程入门、数据分析师开始共同部分*/
+        .pro-hd a,
+        .data-hd a,
+        .mach-hd a,
+        .front-hd a {         /*此处包含机器工程师、前端工程师*/
+            margin: 0 35px;
+            color: #868686;
+            font-size: 14px;
+        }
+        .mach-hd a,.front-hd a {
+            margin: 0 30px;   /*保证最后一个a与前面的在同一行上显示*/
+        }
+        .pro-hd a:nth-child(2),     /*此处包含机器工程师、前端工程师结束*/
+        .data-hd a:nth-child(2),
+        .mach-hd a:nth-child(2),
+        .front-hd a:nth-child(2) {
+            color: #00a4ff;
+        }
+        .pro-bd-l,
+        .data-bd-l {
+            float: left;
+        }
+        .pro-bd-l,
+        .data-bd-l {
+            width: 228px;
+            height: 392px;
+        }
+        .pro-bd-l {
+            background:  url(../images/icon1.png) 0 0 no-repeat;
+        }
+        .data-bd-l{
+            background:  url(../images/icon2.png) 0 0 no-repeat;
+        }
+        .pro-bd-r,
+        .data-bd-r {
+            float: right;
+        }
+        .pro-bd-r-hd,
+        .data-bd-r-hd {
+            width: 957px;
+            height: 100px;
+        }
+        .data-bd-r-hd {
+            background:  url(../images/icon2-2.png) 0 0 no-repeat;
+        }
+        .data-bd-r-hd h3 {
+            margin-left: 57px;
+            font-size: 24px;
+            line-height: 100px;
+            color: #ea8c11;
+        }
+        .data-bd-r-hd span {
+            font-size: 18px;
+            margin-left: 23px;
+        }
+        .pro-bd-r-bd ul li,
+        .data-bd-r-bd ul li{
+            width: 228px;
+            height: 270px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0 3px 1px rgba(0,0,0,0.1);
+            float: right;
+            margin: 22px 14px 15px 0;
+            transition: all 0.4s
+        }
+        .pro-bd-r-bd ul li:hover,
+        .data-bd-r-bd ul li:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+        .pro-bd-r-bd ul li:first-child,
+        .data-bd-r-bd ul li:first-child {
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+        .pro-bd  li h4,
+        .pro-bd  li p,
+        .data-bd  li h4,
+        .data-bd  li p{
+            margin: 0 20px 0 24px;
+        }
+        .pro-bd  li h4,
+        .data-bd  li h4 {
+            color: #050505;
+            margin-top: 15px;
+            line-height: 21px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        .pro-bd  li p,
+        .data-bd  li p {
+            color: #999999;
+            font-size: 12px;
+            margin-top: 21px;
+        }
+        .pro-bd  li span,
+        .data-bd  li span {
+            color: #ff7c2d;
+        }
+        /*编程入门、数据分析师结束*/
+        /*牛人推荐开始*/
+        .teacher-reco {   
+           margin-top: 35px; 
+        }
+        .teacher-hd {   /*头部开始*/
+            height: 40px;
+            margin-bottom: 12px;
+        }
+        .teacher-hd h4{    
+            float: left;
+            color: #494949;
+            font-size: 17px;
+            width: 400px;
+            font-weight: normal;
+        }
+        .teacher-bd ul li {
+            width: 228px;
+            height: 320px;
+            background-color: #fff;
+            position: relative;
+            /*overflow: hidden;*/
+            float: left;
+            margin-right: 14px;
+            margin-bottom: 15px;
+        }
+        .teacher-bd ul li:hover {
+            
+        }
+        .teacher-bd ul li:nth-child(5),
+        .teacher-bd ul li:nth-child(9) {  
+            margin-right: 0px;
+            margin-bottom: 0px;
+        }
+        .teacher-bd ul li:nth-child(6) {
+            width: 470px;
+            background: url(../images/icon3.png) 0 0 no-repeat;
+        }
+        .teacher-bd  li img {
+            width: 228px;         
+            height: 320px;
+        }
+        .teacher-bd  li h2 {
+            margin-top: 98px;
+            color: #f9e103;
+        }
+        .teacher-bd  p {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 200;
+        }
+        .teacher-bd  li .click {
+            display: block;
+            color: #f9e103;
+            width: 87px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            margin-top: 5px;
+            border: 1px solid #f9e103;
+        }
+        .teacher-bd  li .click:hover {
+            color: #fff;
+         }
+        .teacher-bd  li h2,
+        .teacher-bd  p,
+        .teacher-bd  li .click {
+            margin-left: 26px;
+        }
+        .message {          /*牛人详细信息*/
+            background-color: rgba(108,113,127,0.8); 
+            width: 228px;
+            height: 123px;
+            position: absolute;
+            bottom: 0;
+        }
+        .message h4 {
+            color: #fff;
+            margin: 25px 0px 8px 20px;
+        } 
+        .message h4 span {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .message p {
+            font-size: 14px;
+            margin-left: 20px;
+            margin-right: 20px;
+            word-break:break-all;  /*强制英文单词断行*/
+        }
+        .teacher-bd  li:hover .message {
+             height: 320px;
+             transition: 0.4s;  /*平移秒数*/
+        }
+        .teacher-bd  li:hover .message p:after  {
+             content: "对流行框架JQuery、DWR、Struts1/2，Hibernate，Spring，MyBatis、JBPM、Lucene等有深入研究。授课逻辑严谨，条理清晰，注重学生独立解决问题的能力";
+        }
+        .teacher-bd  li:hover .message h4 {
+            margin-top: 100px;
+        }
+        .teacher-bd  li:hover .message p span {
+            display: none;
+        }   /*省略号可以使用text-overflow来做*/
+        .teacher-bd  li .people-nums {
+            width: 84px;
+            height: 20px;
+            position: absolute;
+            right: -2px;
+            top: 8px;
+        }
+        /*牛人推荐结束*/
+        /*页脚开始*/
+        footer {
+           margin-top: 100px;
+           background-color: #fff;
+           height: 273px;
+        }
+        .ft-l { /*页脚左侧开始*/
+            float: left;
+            width: 600px;
+        }
+        .ft-l img {
+           margin-top: 35px; 
+        } 
+        .ft-l p {
+            font-size: 12px;
+            color: #666666;
+            margin-top: 22px;
+            line-height: 18px;
+        }
+        .ft-l a {
+            display: block;
+            width: 118px;
+            height: 34px;
+            text-align: center;
+            line-height: 34px;
+            color: #00a4ff;
+            border: 1px solid #00a4ff;
+            margin-top: 22px;
+        }
+        .ft-l a:hover {
+            color: #fff;
+          
+            background-color: #00a4ff;
+        }/*页脚左侧结束*/
+        .ft-r {  /*页脚右侧开始*/
+            float: right;
+        }
+        .ft-r dl{
+            margin-top: 35px;
+        }
+        .ft-r dl{
+            float: left;
+            width: 225px;    /*此处使用宽度剩余法，不必写多余的margin与padding*/
+        }
+        .ft-r dl:last-child {
+            margin-right: -105px; /*使最后一个dl能贴近右侧边缘*/
+        }
+        .ft-r dt {
+            height: 33px;
+            color: #7d7d7d;
+            font-size: 16px;
+        }
+        .ft-r dd {
+            height: 22px;
+            color: #333333;
+            font-size: 12px;
+        }/*页脚右侧结束*/
